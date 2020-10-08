@@ -24,9 +24,16 @@
 |    GPS    |  3.5V   |  30mA   |  
 |   LoRa    |  3.5V   |  50mA **at 13dBm*  | 
 
+### IREC Requirements 
+
+
 
 
 ## Design Reviews 
+
+[Design Review 1](https://docs.google.com/presentation/d/1L4w887s7x08WpU703jKznQMGognrjYOtB8_F7KaSsSU/edit?usp=sharing): Initial design validation for cell balancing, charging, and discharging
+
+Design Review 2: 10/2020
 
 ## Questions and Considerations 
 
