@@ -25,7 +25,12 @@
 |   LoRa    |  3.5V   |  50mA **at 13dBm*  | 
 
 ### IREC Requirements 
+[General Rules and Reqs 2019](http://www.soundingrocket.org/uploads/9/0/6/4/9064598/sa_cup_irec_rules___requirements_document_20191118__rev_d_final_.pdf)
+[Design, Test, Eval Guide 2019](http://www.soundingrocket.org/uploads/9/0/6/4/9064598/sa_cup_irec-design_test___evaluation_guide_20191118__rev_c_final_.pdf)
 
+
+| Req. ID | Requirement | Implementation |
+|-----------|---------|---------|
 
 
 
