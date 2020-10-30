@@ -29,8 +29,8 @@
 [Design, Test, Eval Guide 2019](http://www.soundingrocket.org/uploads/9/0/6/4/9064598/sa_cup_irec-design_test___evaluation_guide_20191118__rev_c_final_.pdf)
 
 
-| Req. ID | Requirement | Implementation |
-|-----------|---------|---------|
+| Req. ID   | Requirement | Implementation |
+|-----------|-------------|----------------|
 
 
 
