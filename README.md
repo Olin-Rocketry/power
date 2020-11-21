@@ -14,6 +14,8 @@
 - Normal capacity: 80% (assumed) 
 - Temperature range: -20 - 50 C
 
+## System Diagram 
+![bms_system_diagram](https://github.com/Olin-Rocketry/power/power2020.png)
 
 ## System Requirements 
 
