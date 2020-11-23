@@ -15,9 +15,10 @@
 - Temperature range: -20 - 50 C
 
 ## System Diagram 
-![bms_system_diagram](./power2020.png)
+![bms_system_diagram](./img/powersysdiagram.png)
 
 ## Power Distribution
+![power distribution](./img/powerdistribution.jpg)
 
 ### Subsystem loads 
 | Subsystem | Voltage | Current |
