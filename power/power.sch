@@ -601,7 +601,7 @@ F 12 "Active" H 10350 3650 60  0001 L CNN "Status"
 	1    10150 2450
 	1    0    0    -1  
 $EndComp
-Text Label 10650 1850 0    50   ~ 0
+Text Label 11000 1850 0    50   ~ 0
 T2
 Text Label 9650 1750 2    50   ~ 0
 T3
@@ -1189,15 +1189,15 @@ Wire Wire Line
 	4550 6700 4550 6500
 Text Label 750  6700 2    50   ~ 0
 BAT-
-Text Label 10650 2650 0    50   ~ 0
+Text Label 11000 2650 0    50   ~ 0
 FET1
 Text Label 9650 3050 2    50   ~ 0
 Discharge
-Text Label 10650 2750 0    50   ~ 0
+Text Label 11000 2750 0    50   ~ 0
 FET2
-Text Label 10650 2850 0    50   ~ 0
+Text Label 11000 2850 0    50   ~ 0
 FET3
-Text Label 10650 2950 0    50   ~ 0
+Text Label 11000 2950 0    50   ~ 0
 FET4
 Text Label 9650 3350 2    50   ~ 0
 FET5
@@ -1429,7 +1429,7 @@ Wire Wire Line
 	6850 6700 7150 6700
 Connection ~ 6850 6700
 Connection ~ 6850 3950
-Text Label 10650 1950 0    50   ~ 0
+Text Label 11000 1950 0    50   ~ 0
 T1
 $Comp
 L power:GND #PWR0115
@@ -1442,17 +1442,6 @@ F 3 "" H 10700 3850 50  0001 C CNN
 	1    10700 3850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10150 3850 10250 3850
-Connection ~ 10250 3850
-Wire Wire Line
-	10250 3850 10350 3850
-Connection ~ 10350 3850
-Wire Wire Line
-	10350 3850 10450 3850
-Connection ~ 10450 3850
-Wire Wire Line
-	10450 3850 10700 3850
 Text Label 7150 6700 0    50   ~ 0
 LOAD-
 Wire Wire Line
@@ -1531,7 +1520,7 @@ Text Label 1900 6300 2    50   ~ 0
 SafetySwitch
 Text Label 4250 6300 2    50   ~ 0
 SafetySwitch
-Text Label 10650 2050 0    50   ~ 0
+Text Label 11000 2050 0    50   ~ 0
 SafetySwitch
 NoConn ~ 9650 1350
 NoConn ~ 9650 1450
@@ -1548,29 +1537,15 @@ NoConn ~ 9650 2850
 NoConn ~ 9650 2950
 NoConn ~ 9650 3150
 NoConn ~ 9650 3250
-NoConn ~ 10650 2550
-NoConn ~ 10650 2450
-NoConn ~ 10650 2350
-NoConn ~ 10650 2250
-NoConn ~ 10650 2150
-NoConn ~ 10650 1750
-NoConn ~ 10650 1650
-NoConn ~ 10650 1550
-NoConn ~ 10650 1450
-Wire Wire Line
-	10050 850  10150 850 
-Connection ~ 10150 850 
-Wire Wire Line
-	10150 850  10250 850 
-Connection ~ 10250 850 
-Wire Wire Line
-	10250 850  10350 850 
-Connection ~ 10350 850 
-Wire Wire Line
-	10350 850  10450 850 
-Connection ~ 10450 850 
-Wire Wire Line
-	10450 850  10650 850 
+NoConn ~ 11000 2550
+NoConn ~ 11000 2450
+NoConn ~ 11000 2350
+NoConn ~ 11000 2250
+NoConn ~ 11000 2150
+NoConn ~ 11000 1750
+NoConn ~ 11000 1650
+NoConn ~ 11000 1550
+NoConn ~ 11000 1450
 $Comp
 L power:VCC #PWR0116
 U 1 1 5E64F518
@@ -1756,4 +1731,20 @@ F 3 "http://www.ti.com/lit/ds/symlink/lmc6482.pdf" H 8050 5600 50  0001 C CNN
 	1    8050 5600
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	10450 3850 10700 3850
+Wire Wire Line
+	10450 850  10650 850 
+Wire Wire Line
+	10050 850  10150 850 
+Connection ~ 10450 850 
+Connection ~ 10150 850 
+Wire Wire Line
+	10150 850  10250 850 
+Connection ~ 10250 850 
+Wire Wire Line
+	10250 850  10350 850 
+Connection ~ 10350 850 
+Wire Wire Line
+	10350 850  10450 850 
 $EndSCHEMATC
