@@ -24,10 +24,12 @@
 | Subsystem | Voltage | Current |
 |-----------|---------|---------|
 | Solenoid  |  12.3V  |  880mA  |
-|    GPS    |  3.5V   |  30mA   |  
-|   Radio   |  3.5V   |  50mA *at 13dBm* |
-| Flight Computer | | |
-| BMS | | |
+|    GPS    |  3.3V   |  30mA   |  
+|   Radio   |  3.3V   |  50mA *at 13dBm* |
+| Flight Computer | 3.3V | |
+| BMS | 5V | |
+
+(Live Power Budget Sheet)[https://docs.google.com/spreadsheets/d/1nH3F-o1HZTds1WetEKFTd1lCUxuCh-wOJmA-jhke28s/edit?usp=sharing]
 
 
 ## Requirements 
