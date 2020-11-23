@@ -14,24 +14,32 @@
 - Normal capacity: 80% (assumed) 
 - Temperature range: -20 - 50 C
 
+## System Diagram 
+![bms_system_diagram](./power2020.png)
 
-## System Requirements 
+## Power Distribution
 
 ### Subsystem loads 
 | Subsystem | Voltage | Current |
 |-----------|---------|---------|
 | Solenoid  |  12.3V  |  880mA  |
 |    GPS    |  3.5V   |  30mA   |  
-|   LoRa    |  3.5V   |  50mA **at 13dBm*  | 
+|   Radio   |  3.5V   |  50mA *at 13dBm* |
+| Flight Computer | | |
+| BMS | | |
 
-### IREC Requirements 
+
+## Requirements 
 [General Rules and Reqs 2019](http://www.soundingrocket.org/uploads/9/0/6/4/9064598/sa_cup_irec_rules___requirements_document_20191118__rev_d_final_.pdf)
 [Design, Test, Eval Guide 2019](http://www.soundingrocket.org/uploads/9/0/6/4/9064598/sa_cup_irec-design_test___evaluation_guide_20191118__rev_c_final_.pdf)
-
-
-| Req. ID   | Requirement | Implementation |
-|-----------|-------------|----------------|
-
+ 
+| Req. ID   | Requirement | Implementation | Type |
+|-----------|-------------|----------------|------|
+|BAT_REQ_04 | Battery Life | The batteries shall provide at least 2500 mAh of charge to the non-COTS computer power flow | Team |
+|BAT_REQ_05 | Battery Quantity | The battery management board shall manage two separate batteries | Team |
+|BAT_REQ_06	| Battery Draw | The battery management board shall be able to supply an expected maximum of 2000 mA | Team |
+|BAT_REQ_07	| Maximum Power | Draw	The battery management board shall not draw more than 250 mA during the mission| Team|
+|BAT_REQ_08	| Overall Power | Draw	The battery management board shall not draw more than 100 mAh over the course of the mission |Team|
 
 
 ## Design Reviews 
