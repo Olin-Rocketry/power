@@ -18,7 +18,7 @@
 ![bms_system_diagram](./img/powersysdiagram.png)
 
 ## Power Distribution
-![power distribution](./img/powerdistribution.jpg)
+![power distribution](./img/power_distribution.jpg)
 
 ### Subsystem loads 
 | Subsystem | Voltage | Current |
