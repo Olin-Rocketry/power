@@ -258,15 +258,15 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x06_Female J4
 U 1 1 5E160DCB
-P 13100 5000
-F 0 "J4" H 13127 4976 50  0000 L CNN
-F 1 "Conn_01x06_Female" H 13127 4885 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x06_P1.00mm_Vertical" H 13100 5000 50  0001 C CNN
-F 3 "~" H 13100 5000 50  0001 C CNN
-	1    13100 5000
+P 7350 3200
+F 0 "J4" H 7377 3176 50  0000 L CNN
+F 1 "Conn_01x06_Female" V 6900 2900 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x06_P1.00mm_Vertical" H 7350 3200 50  0001 C CNN
+F 3 "~" H 7350 3200 50  0001 C CNN
+	1    7350 3200
 	1    0    0    -1  
 $EndComp
-Text Notes 12550 4650 0    50   ~ 10
+Text Notes 7050 2850 0    50   ~ 10
 Battery Connectors
 Text Notes 7050 1750 0    50   ~ 10
 Power Flags
@@ -327,8 +327,6 @@ F 3 "" H 8950 6350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8950 6350 8700 6350
-Text Notes 12550 4750 0    50   ~ 0
-Positive terminals of each battery cell 
 $Comp
 L Device:R R16
 U 1 1 5E177CF5
@@ -456,48 +454,38 @@ Wire Wire Line
 	7200 4800 7200 4900
 Text Label 6900 5100 2    50   ~ 0
 Discharge
-Text Notes 2600 5600 0    50   ~ 10
+Text Notes 2750 5600 0    50   ~ 10
 Thermal Monitoring\n
-Text Label 12900 4800 2    50   ~ 0
-B1
-Text Label 12900 4900 2    50   ~ 0
-B2
-Text Label 12900 5000 2    50   ~ 0
-B3
-Text Label 12900 5100 2    50   ~ 0
-B4
-Text Label 12900 5200 2    50   ~ 0
-B5
-Text Label 12900 5300 2    50   ~ 0
-B6
-Text Label 2200 5500 0    50   ~ 0
-B1
-Text Label 2200 5950 0    50   ~ 0
-B2
-Text Label 2200 6350 0    50   ~ 0
-B3
-Text Label 4550 5500 0    50   ~ 0
-B4
-Text Label 4550 5950 0    50   ~ 0
-B5
-Text Label 4550 6350 0    50   ~ 0
-B6
+Text Label 7150 3000 2    50   ~ 0
+B1-
+Text Label 7150 3100 2    50   ~ 0
+B2-
+Text Label 7150 3200 2    50   ~ 0
+B3-
+Text Label 7150 3300 2    50   ~ 0
+B4-
+Text Label 7150 3400 2    50   ~ 0
+B5-
+Text Label 7150 3500 2    50   ~ 0
+B6-
+Text Label 2250 5800 0    50   ~ 0
+B2+
 Wire Wire Line
 	750  7550 900  7550
 $Comp
 L Connector:Conn_01x02_Female J1
 U 1 1 5E179EB6
-P 7400 2600
-F 0 "J1" H 7427 2576 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 7427 2485 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 7400 2600 50  0001 C CNN
-F 3 "~" H 7400 2600 50  0001 C CNN
-	1    7400 2600
+P 7550 4200
+F 0 "J1" H 7577 4176 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 7577 4085 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 7550 4200 50  0001 C CNN
+F 3 "~" H 7550 4200 50  0001 C CNN
+	1    7550 4200
 	1    0    0    -1  
 $EndComp
-Text Label 7200 2600 2    50   ~ 0
+Text Label 7350 4200 2    50   ~ 0
 LOAD+
-Text Label 7200 2700 2    50   ~ 0
+Text Label 7350 4300 2    50   ~ 0
 LOAD-
 Text Label 9200 5000 0    50   ~ 0
 LOAD+
@@ -566,17 +554,6 @@ Wire Wire Line
 	2200 4800 2200 5300
 Connection ~ 2200 5300
 Wire Wire Line
-	2200 5300 2200 5700
-Connection ~ 2200 5700
-Wire Wire Line
-	2200 5700 2200 6150
-Connection ~ 2200 6150
-Wire Wire Line
-	2200 6150 2200 6550
-Wire Wire Line
-	2200 6550 2200 6950
-Connection ~ 2200 6550
-Wire Wire Line
 	2200 7350 2200 7550
 Wire Wire Line
 	4550 4800 4550 5300
@@ -591,9 +568,9 @@ F 3 "~" H 3050 4800 50  0001 C CNN
 	1    3050 4800
 	-1   0    0    1   
 $EndComp
-Text Label 2600 6000 0    50   ~ 0
+Text Label 2750 6000 0    50   ~ 0
 T2
-Text Label 2950 6450 0    50   ~ 0
+Text Label 3100 6450 0    50   ~ 0
 T3
 Text Label 6300 9400 0    50   ~ 0
 T4
@@ -601,22 +578,10 @@ Text Label 6900 8850 0    50   ~ 0
 T5
 Text Label 6900 9400 0    50   ~ 0
 T6
-Connection ~ 4550 5300
-Wire Wire Line
-	4550 5300 4550 5700
-Connection ~ 4550 5700
-Wire Wire Line
-	4550 5700 4550 6150
-Connection ~ 4550 6150
-Wire Wire Line
-	4550 6150 4550 6550
-Connection ~ 4550 6550
 Wire Wire Line
 	900  7550 2200 7550
 Wire Wire Line
 	900  4800 900  7000
-Wire Wire Line
-	4550 6550 4550 6950
 Wire Wire Line
 	6050 4800 6050 6950
 Wire Wire Line
@@ -1066,17 +1031,17 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x02_Female J2
 U 1 1 5E553072
-P 7400 2850
-F 0 "J2" H 7427 2826 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 7427 2735 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 7400 2850 50  0001 C CNN
-F 3 "~" H 7400 2850 50  0001 C CNN
-	1    7400 2850
+P 7450 2550
+F 0 "J2" H 7477 2526 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 7477 2435 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 7450 2550 50  0001 C CNN
+F 3 "~" H 7450 2550 50  0001 C CNN
+	1    7450 2550
 	1    0    0    -1  
 $EndComp
-Text Label 7200 2850 2    50   ~ 0
+Text Label 7250 2550 2    50   ~ 0
 DC+
-Text Label 7200 2950 2    50   ~ 0
+Text Label 7250 2650 2    50   ~ 0
 DC-
 $Comp
 L power:GND #PWR0114
@@ -1154,213 +1119,180 @@ Wire Wire Line
 $Comp
 L Device:Thermistor TH1
 U 1 1 5E64F7E5
-P 2450 5800
-F 0 "TH1" H 2555 5846 50  0000 L CNN
-F 1 "Thermistor" H 2555 5755 50  0000 L CNN
-F 2 "footprints:Thermistor" H 2450 5800 50  0001 C CNN
-F 3 "~" H 2450 5800 50  0001 C CNN
-	1    2450 5800
+P 2600 5800
+F 0 "TH1" H 2705 5846 50  0000 L CNN
+F 1 "Thermistor" H 2705 5755 50  0000 L CNN
+F 2 "footprints:Thermistor" H 2600 5800 50  0001 C CNN
+F 3 "~" H 2600 5800 50  0001 C CNN
+	1    2600 5800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R11
 U 1 1 5E64F97D
-P 2450 5450
-F 0 "R11" H 2520 5496 50  0000 L CNN
-F 1 "R" H 2520 5405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2380 5450 50  0001 C CNN
-F 3 "~" H 2450 5450 50  0001 C CNN
-	1    2450 5450
+P 2600 5450
+F 0 "R11" H 2670 5496 50  0000 L CNN
+F 1 "R" H 2670 5405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2530 5450 50  0001 C CNN
+F 3 "~" H 2600 5450 50  0001 C CNN
+	1    2600 5450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 5300 2450 5300
-Text Label 2250 5600 0    50   ~ 0
+Text Label 2400 5600 0    50   ~ 0
 T1
 Wire Wire Line
-	2250 5600 2450 5600
-Connection ~ 2450 5600
+	2400 5600 2600 5600
+Connection ~ 2600 5600
 $Comp
 L Device:Thermistor TH2
 U 1 1 5E68B75F
-P 2800 6200
-F 0 "TH2" H 2905 6246 50  0000 L CNN
-F 1 "Thermistor" H 2905 6155 50  0000 L CNN
-F 2 "footprints:Thermistor" H 2800 6200 50  0001 C CNN
-F 3 "~" H 2800 6200 50  0001 C CNN
-	1    2800 6200
+P 2950 6200
+F 0 "TH2" H 3055 6246 50  0000 L CNN
+F 1 "Thermistor" H 3055 6155 50  0000 L CNN
+F 2 "footprints:Thermistor" H 2950 6200 50  0001 C CNN
+F 3 "~" H 2950 6200 50  0001 C CNN
+	1    2950 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R12
 U 1 1 5E68B766
-P 2800 5850
-F 0 "R12" H 2870 5896 50  0000 L CNN
-F 1 "R" H 2870 5805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2730 5850 50  0001 C CNN
-F 3 "~" H 2800 5850 50  0001 C CNN
-	1    2800 5850
+P 2950 5850
+F 0 "R12" H 3020 5896 50  0000 L CNN
+F 1 "R" H 3020 5805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2880 5850 50  0001 C CNN
+F 3 "~" H 2950 5850 50  0001 C CNN
+	1    2950 5850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 6000 2800 6000
-Connection ~ 2800 6000
-Wire Wire Line
-	2200 5700 2800 5700
+	2750 6000 2950 6000
+Connection ~ 2950 6000
 $Comp
 L Device:Thermistor TH3
 U 1 1 5E698429
-P 3150 6650
-F 0 "TH3" H 3255 6696 50  0000 L CNN
-F 1 "Thermistor" H 3255 6605 50  0000 L CNN
-F 2 "footprints:Thermistor" H 3150 6650 50  0001 C CNN
-F 3 "~" H 3150 6650 50  0001 C CNN
-	1    3150 6650
+P 3300 6650
+F 0 "TH3" H 3405 6696 50  0000 L CNN
+F 1 "Thermistor" H 3405 6605 50  0000 L CNN
+F 2 "footprints:Thermistor" H 3300 6650 50  0001 C CNN
+F 3 "~" H 3300 6650 50  0001 C CNN
+	1    3300 6650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R14
 U 1 1 5E698430
-P 3150 6300
-F 0 "R14" H 3220 6346 50  0000 L CNN
-F 1 "R" H 3220 6255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3080 6300 50  0001 C CNN
-F 3 "~" H 3150 6300 50  0001 C CNN
-	1    3150 6300
+P 3300 6300
+F 0 "R14" H 3370 6346 50  0000 L CNN
+F 1 "R" H 3370 6255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3230 6300 50  0001 C CNN
+F 3 "~" H 3300 6300 50  0001 C CNN
+	1    3300 6300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2950 6450 3150 6450
-Connection ~ 3150 6450
-Wire Wire Line
-	2200 6150 3150 6150
-Wire Wire Line
-	2200 7550 2450 7550
+	3100 6450 3300 6450
+Connection ~ 3300 6450
 Connection ~ 2200 7550
 Wire Wire Line
-	2450 6000 2450 7550
-Connection ~ 2450 7550
+	2600 6000 2600 7550
 Wire Wire Line
-	2450 7550 2800 7550
+	2950 6400 2950 7550
 Wire Wire Line
-	2800 6400 2800 7550
-Connection ~ 2800 7550
-Wire Wire Line
-	2800 7550 3150 7550
-Wire Wire Line
-	3150 6850 3150 7550
-Connection ~ 3150 7550
+	3300 6850 3300 7550
 Wire Wire Line
 	2200 4800 2900 4800
 Connection ~ 2200 4800
-Text Label 4950 6000 0    50   ~ 0
+Text Label 5100 6000 0    50   ~ 0
 T5
-Text Label 5300 6450 0    50   ~ 0
+Text Label 5450 6450 0    50   ~ 0
 T6
 $Comp
 L Device:Thermistor TH5
 U 1 1 5E6F0DF5
-P 4800 5800
-F 0 "TH5" H 4905 5846 50  0000 L CNN
-F 1 "Thermistor" H 4905 5755 50  0000 L CNN
-F 2 "footprints:Thermistor" H 4800 5800 50  0001 C CNN
-F 3 "~" H 4800 5800 50  0001 C CNN
-	1    4800 5800
+P 4950 5800
+F 0 "TH5" H 5055 5846 50  0000 L CNN
+F 1 "Thermistor" H 5055 5755 50  0000 L CNN
+F 2 "footprints:Thermistor" H 4950 5800 50  0001 C CNN
+F 3 "~" H 4950 5800 50  0001 C CNN
+	1    4950 5800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R20
 U 1 1 5E6F0DFC
-P 4800 5450
-F 0 "R20" H 4870 5496 50  0000 L CNN
-F 1 "R" H 4870 5405 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4730 5450 50  0001 C CNN
-F 3 "~" H 4800 5450 50  0001 C CNN
-	1    4800 5450
+P 4950 5450
+F 0 "R20" H 5020 5496 50  0000 L CNN
+F 1 "R" H 5020 5405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4880 5450 50  0001 C CNN
+F 3 "~" H 4950 5450 50  0001 C CNN
+	1    4950 5450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4550 5300 4800 5300
-Text Label 4600 5600 0    50   ~ 0
+Text Label 4750 5600 0    50   ~ 0
 T4
 Wire Wire Line
-	4600 5600 4800 5600
-Connection ~ 4800 5600
+	4750 5600 4950 5600
+Connection ~ 4950 5600
 $Comp
 L Device:Thermistor TH6
 U 1 1 5E6F0E07
-P 5150 6200
-F 0 "TH6" H 5255 6246 50  0000 L CNN
-F 1 "Thermistor" H 5255 6155 50  0000 L CNN
-F 2 "footprints:Thermistor" H 5150 6200 50  0001 C CNN
-F 3 "~" H 5150 6200 50  0001 C CNN
-	1    5150 6200
+P 5300 6200
+F 0 "TH6" H 5405 6246 50  0000 L CNN
+F 1 "Thermistor" H 5405 6155 50  0000 L CNN
+F 2 "footprints:Thermistor" H 5300 6200 50  0001 C CNN
+F 3 "~" H 5300 6200 50  0001 C CNN
+	1    5300 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R21
 U 1 1 5E6F0E0E
-P 5150 5850
-F 0 "R21" H 5220 5896 50  0000 L CNN
-F 1 "R" H 5220 5805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5080 5850 50  0001 C CNN
-F 3 "~" H 5150 5850 50  0001 C CNN
-	1    5150 5850
+P 5300 5850
+F 0 "R21" H 5370 5896 50  0000 L CNN
+F 1 "R" H 5370 5805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 5850 50  0001 C CNN
+F 3 "~" H 5300 5850 50  0001 C CNN
+	1    5300 5850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4950 6000 5150 6000
-Connection ~ 5150 6000
-Wire Wire Line
-	4550 5700 5150 5700
+	5100 6000 5300 6000
+Connection ~ 5300 6000
 $Comp
 L Device:Thermistor TH7
 U 1 1 5E6F0E18
-P 5500 6650
-F 0 "TH7" H 5605 6696 50  0000 L CNN
-F 1 "Thermistor" H 5605 6605 50  0000 L CNN
-F 2 "footprints:Thermistor" H 5500 6650 50  0001 C CNN
-F 3 "~" H 5500 6650 50  0001 C CNN
-	1    5500 6650
+P 5650 6650
+F 0 "TH7" H 5755 6696 50  0000 L CNN
+F 1 "Thermistor" H 5755 6605 50  0000 L CNN
+F 2 "footprints:Thermistor" H 5650 6650 50  0001 C CNN
+F 3 "~" H 5650 6650 50  0001 C CNN
+	1    5650 6650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R23
 U 1 1 5E6F0E1F
-P 5500 6300
-F 0 "R23" H 5570 6346 50  0000 L CNN
-F 1 "R" H 5570 6255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5430 6300 50  0001 C CNN
-F 3 "~" H 5500 6300 50  0001 C CNN
-	1    5500 6300
+P 5650 6300
+F 0 "R23" H 5720 6346 50  0000 L CNN
+F 1 "R" H 5720 6255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5580 6300 50  0001 C CNN
+F 3 "~" H 5650 6300 50  0001 C CNN
+	1    5650 6300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 6450 5500 6450
-Connection ~ 5500 6450
+	5450 6450 5650 6450
+Connection ~ 5650 6450
 Wire Wire Line
-	4550 6150 5500 6150
+	4950 6000 4950 7550
 Wire Wire Line
-	4800 6000 4800 7550
+	5300 6400 5300 7550
 Wire Wire Line
-	5150 6400 5150 7550
-Wire Wire Line
-	5500 6850 5500 7550
-Wire Wire Line
-	3150 7550 4550 7550
+	5650 6850 5650 7550
 Connection ~ 4550 7550
 Wire Wire Line
-	4550 7550 4800 7550
-Connection ~ 4800 7550
-Connection ~ 5150 7550
-Wire Wire Line
-	5150 7550 5500 7550
-Wire Wire Line
-	5500 7550 6050 7550
-Wire Wire Line
 	4550 4800 6050 4800
-Wire Wire Line
-	4800 7550 5150 7550
 Wire Wire Line
 	3200 4800 4550 4800
 Wire Wire Line
@@ -1448,11 +1380,11 @@ Connection ~ 7850 4800
 Wire Wire Line
 	7850 4800 8400 4800
 Text Label 1900 7150 2    50   ~ 0
-SafetySwitch
+SafetySwitchA
 Text Label 4250 7150 2    50   ~ 0
-SafetySwitch
+SafetySwitchB
 Text Label 10600 1900 0    50   ~ 0
-SafetySwitch
+SafetySwitchA
 Text Label 10600 2800 0    50   ~ 0
 RESET
 $Comp
@@ -1639,7 +1571,6 @@ F 3 "~" H 6400 7100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 4550 4800
-Connection ~ 5500 7550
 Wire Wire Line
 	6050 4800 6400 4800
 Connection ~ 6050 4800
@@ -1740,7 +1671,6 @@ Wire Wire Line
 Connection ~ 8400 3500
 NoConn ~ 10600 2200
 NoConn ~ 10600 2400
-NoConn ~ 10600 2500
 NoConn ~ 10600 2600
 NoConn ~ 10600 3200
 NoConn ~ 10600 3500
@@ -1758,4 +1688,144 @@ Text Label 10600 3700 0    50   ~ 0
 RESET
 Text Notes 7050 2450 0    50   ~ 10
 Power Connectors
+Connection ~ 2600 7550
+Connection ~ 2950 7550
+Connection ~ 3300 7550
+Wire Wire Line
+	3300 7550 4550 7550
+Wire Wire Line
+	2200 7550 2600 7550
+Wire Wire Line
+	2600 7550 2950 7550
+Wire Wire Line
+	2950 7550 3300 7550
+Wire Wire Line
+	2200 5300 2600 5300
+Wire Wire Line
+	2200 5700 2950 5700
+Wire Wire Line
+	2200 5700 2200 5800
+Wire Wire Line
+	2200 5800 2250 5800
+Wire Wire Line
+	2200 5900 2250 5900
+Text Label 2250 5900 0    50   ~ 0
+B2-
+Connection ~ 2200 5700
+Text Label 2250 5400 0    50   ~ 0
+B1+
+Wire Wire Line
+	2200 5300 2200 5400
+Wire Wire Line
+	2200 5400 2250 5400
+Wire Wire Line
+	2200 5700 2200 5500
+Wire Wire Line
+	2200 5500 2250 5500
+Text Label 2250 5500 0    50   ~ 0
+B1-
+Wire Wire Line
+	2200 5900 2200 6150
+Wire Wire Line
+	2200 6150 3300 6150
+Connection ~ 2200 6150
+Text Label 2250 6250 0    50   ~ 0
+B3+
+Wire Wire Line
+	2200 6150 2200 6250
+Wire Wire Line
+	2200 6250 2250 6250
+Wire Wire Line
+	2200 6350 2250 6350
+Text Label 2250 6350 0    50   ~ 0
+B3-
+Wire Wire Line
+	2200 6350 2200 6550
+Connection ~ 2200 6550
+Wire Wire Line
+	2200 6550 2200 6950
+Connection ~ 4950 7550
+Connection ~ 5300 7550
+Connection ~ 5650 7550
+Wire Wire Line
+	5650 7550 6050 7550
+Wire Wire Line
+	4550 7550 4950 7550
+Wire Wire Line
+	4950 7550 5300 7550
+Wire Wire Line
+	5300 7550 5650 7550
+Text Label 4600 5400 0    50   ~ 0
+B4+
+Wire Wire Line
+	4550 5300 4550 5400
+Wire Wire Line
+	4550 5400 4600 5400
+Wire Wire Line
+	4550 5500 4600 5500
+Text Label 4600 5500 0    50   ~ 0
+B4-
+Wire Wire Line
+	4550 5500 4550 5700
+Connection ~ 4550 5300
+Wire Wire Line
+	4550 5300 4950 5300
+Wire Wire Line
+	4550 5700 5300 5700
+Connection ~ 4550 5700
+Text Label 4600 5800 0    50   ~ 0
+B5+
+Wire Wire Line
+	4550 5700 4550 5800
+Wire Wire Line
+	4550 5800 4600 5800
+Wire Wire Line
+	4550 5900 4600 5900
+Text Label 4600 5900 0    50   ~ 0
+B5-
+Wire Wire Line
+	4550 5900 4550 6150
+Wire Wire Line
+	4550 6150 5650 6150
+Connection ~ 4550 6150
+Text Label 4600 6250 0    50   ~ 0
+B6+
+Wire Wire Line
+	4550 6150 4550 6250
+Wire Wire Line
+	4550 6250 4600 6250
+Wire Wire Line
+	4550 6350 4600 6350
+Text Label 4600 6350 0    50   ~ 0
+B6-
+Wire Wire Line
+	4550 6350 4550 6550
+Connection ~ 4550 6550
+Wire Wire Line
+	4550 6550 4550 6950
+$Comp
+L Connector:Conn_01x06_Female J?
+U 1 1 5FDE0E9F
+P 7850 3200
+F 0 "J?" H 7877 3176 50  0000 L CNN
+F 1 "Conn_01x06_Female" V 7950 2900 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x06_P1.00mm_Vertical" H 7850 3200 50  0001 C CNN
+F 3 "~" H 7850 3200 50  0001 C CNN
+	1    7850 3200
+	1    0    0    -1  
+$EndComp
+Text Label 7650 3000 2    50   ~ 0
+B1+
+Text Label 7650 3100 2    50   ~ 0
+B2+
+Text Label 7650 3200 2    50   ~ 0
+B3+
+Text Label 7650 3300 2    50   ~ 0
+B4+
+Text Label 7650 3400 2    50   ~ 0
+B5+
+Text Label 7650 3500 2    50   ~ 0
+B6+
+Text Label 10600 2500 0    50   ~ 0
+SafetySwitchB
 $EndSCHEMATC

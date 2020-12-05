@@ -258,15 +258,15 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x06_Female J4
 U 1 1 5E160DCB
-P 13100 5000
-F 0 "J4" H 13127 4976 50  0000 L CNN
-F 1 "Conn_01x06_Female" H 13127 4885 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x06_P1.00mm_Vertical" H 13100 5000 50  0001 C CNN
-F 3 "~" H 13100 5000 50  0001 C CNN
-	1    13100 5000
+P 7000 4000
+F 0 "J4" H 7027 3976 50  0000 L CNN
+F 1 "Conn_01x06_Female" H 7027 3885 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x06_P1.00mm_Vertical" H 7000 4000 50  0001 C CNN
+F 3 "~" H 7000 4000 50  0001 C CNN
+	1    7000 4000
 	1    0    0    -1  
 $EndComp
-Text Notes 12550 4650 0    50   ~ 10
+Text Notes 6450 3650 0    50   ~ 10
 Battery Connectors
 Text Notes 7050 1750 0    50   ~ 10
 Power Flags
@@ -327,7 +327,7 @@ F 3 "" H 8950 6350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8950 6350 8700 6350
-Text Notes 12550 4750 0    50   ~ 0
+Text Notes 6450 3750 0    50   ~ 0
 Positive terminals of each battery cell 
 $Comp
 L Device:R R16
@@ -458,17 +458,17 @@ Text Label 6900 5100 2    50   ~ 0
 Discharge
 Text Notes 2600 5600 0    50   ~ 10
 Thermal Monitoring\n
-Text Label 12900 4800 2    50   ~ 0
+Text Label 6800 3800 2    50   ~ 0
 B1
-Text Label 12900 4900 2    50   ~ 0
+Text Label 6800 3900 2    50   ~ 0
 B2
-Text Label 12900 5000 2    50   ~ 0
+Text Label 6800 4000 2    50   ~ 0
 B3
-Text Label 12900 5100 2    50   ~ 0
+Text Label 6800 4100 2    50   ~ 0
 B4
-Text Label 12900 5200 2    50   ~ 0
+Text Label 6800 4200 2    50   ~ 0
 B5
-Text Label 12900 5300 2    50   ~ 0
+Text Label 6800 4300 2    50   ~ 0
 B6
 Text Label 2200 5500 0    50   ~ 0
 B1
@@ -549,7 +549,7 @@ Wire Wire Line
 	6050 7250 6050 7550
 Wire Wire Line
 	900  7300 900  7550
-Text Label 10600 1700 0    50   ~ 0
+Text Label 10600 3300 0    50   ~ 0
 T2
 Text Label 10600 1200 0    50   ~ 0
 T3
@@ -1133,11 +1133,11 @@ Wire Wire Line
 	4550 7550 4550 7350
 Text Label 750  7550 2    50   ~ 0
 BAT-
-Text Label 10600 1000 0    50   ~ 0
+Text Label 10600 2100 0    50   ~ 0
 FET1
 Text Label 10600 3100 0    50   ~ 0
 Discharge
-Text Label 10600 1100 0    50   ~ 0
+Text Label 10600 2000 0    50   ~ 0
 FET2
 Text Label 10600 1300 0    50   ~ 0
 FET3
@@ -1738,18 +1738,24 @@ Wire Wire Line
 Wire Wire Line
 	8250 3500 8250 3600
 Connection ~ 8400 3500
-NoConn ~ 10600 2000
-NoConn ~ 10600 2100
 NoConn ~ 10600 2200
 NoConn ~ 10600 2400
 NoConn ~ 10600 2500
 NoConn ~ 10600 2600
 NoConn ~ 10600 3200
-NoConn ~ 10600 3300
 NoConn ~ 10600 3500
-NoConn ~ 10600 3700
 NoConn ~ 10600 3800
-NoConn ~ 10600 3900
-Text Notes 9150 650  0    50   ~ 10
+Text Notes 9250 650  0    50   ~ 10
 Microcontroller
+NoConn ~ 10600 3900
+Text Label 10600 1100 0    50   ~ 0
+MOSI
+Text Label 10600 1000 0    50   ~ 0
+MISO
+Text Label 10600 1700 0    50   ~ 0
+SCK
+Text Label 10600 3700 0    50   ~ 0
+RESET
+Text Notes 7050 2450 0    50   ~ 10
+Power Connectors
 $EndSCHEMATC
