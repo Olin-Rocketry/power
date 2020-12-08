@@ -672,7 +672,7 @@ L Device:R R22
 U 1 1 5E52B5B2
 P 5300 1400
 F 0 "R22" H 5370 1446 50  0000 L CNN
-F 1 "10k" H 5370 1355 50  0000 L CNN
+F 1 "0.74" H 5370 1355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5230 1400 50  0001 C CNN
 F 3 "~" H 5300 1400 50  0001 C CNN
 	1    5300 1400
@@ -801,12 +801,12 @@ $EndComp
 $Comp
 L Device:C C4
 U 1 1 5E57A175
-P 1650 3000
-F 0 "C4" H 1535 2954 50  0000 R CNN
-F 1 "0.1uF" H 1535 3045 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1688 2850 50  0001 C CNN
-F 3 "~" H 1650 3000 50  0001 C CNN
-	1    1650 3000
+P 1650 3150
+F 0 "C4" H 1535 3104 50  0000 R CNN
+F 1 "0.1uF" H 1535 3195 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1688 3000 50  0001 C CNN
+F 3 "~" H 1650 3150 50  0001 C CNN
+	1    1650 3150
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -840,12 +840,12 @@ $EndComp
 $Comp
 L power:GND #PWR0111
 U 1 1 5E588124
-P 1650 3150
-F 0 "#PWR0111" H 1650 2900 50  0001 C CNN
-F 1 "GND" H 1655 2977 50  0000 C CNN
-F 2 "" H 1650 3150 50  0001 C CNN
-F 3 "" H 1650 3150 50  0001 C CNN
-	1    1650 3150
+P 1650 3300
+F 0 "#PWR0111" H 1650 3050 50  0001 C CNN
+F 1 "GND" H 1655 3127 50  0000 C CNN
+F 2 "" H 1650 3300 50  0001 C CNN
+F 3 "" H 1650 3300 50  0001 C CNN
+	1    1650 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1828,4 +1828,42 @@ Text Label 7650 3500 2    50   ~ 0
 B6+
 Text Label 10600 2500 0    50   ~ 0
 SafetySwitchB
+Text Notes 1700 2900 0    50   ~ 0
+1/10 W
+Wire Wire Line
+	1650 2850 1650 3000
+Text Notes 1750 3300 0    50   ~ 0
+40V
+Text Notes 1350 600  0    50   ~ 0
+1/10 W
+Text Notes 3000 1500 0    50   ~ 0
+1/10 W
+Text Notes 3250 1700 0    50   ~ 0
+1/10 W
+Text Notes 4350 3100 0    50   ~ 0
+40V
+Text Notes 4000 2400 0    50   ~ 0
+40V
+Text Notes 3250 1250 0    50   ~ 0
+35V
+Text Notes 3750 950  0    50   ~ 0
+10V
+Text Notes 1300 2600 0    50   ~ 0
+40V
+Text Notes 1600 2450 0    50   ~ 0
+40V
+Text Notes 5500 1150 0    50   ~ 0
+20V
+Text Notes 6900 2550 0    50   ~ 0
+20V
+Text Notes 6900 2650 0    50   ~ 0
+0V
+Text Notes 1600 1950 0    50   ~ 0
+3.9V
+Text Notes 1500 1550 0    50   ~ 0
+1.024V
+Text Notes 5400 1550 0    50   ~ 0
+1/10 W
+Text Notes 1500 1750 0    50   ~ 0
+1.025V
 $EndSCHEMATC
