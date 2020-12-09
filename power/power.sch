@@ -4,7 +4,7 @@ LIBS:74xx
 LIBS:power-cache
 EELAYER 26 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title ""
@@ -16,7 +16,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 7300 5850 0    50   ~ 10
+Text Notes 7300 5950 0    50   ~ 10
 CC Discharging - 2000 mA
 $Comp
 L Device:LED D7
@@ -464,20 +464,16 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x02_Female J1
 U 1 1 5E179EB6
-P 7550 4200
-F 0 "J1" H 7577 4176 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 7577 4085 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 7550 4200 50  0001 C CNN
-F 3 "~" H 7550 4200 50  0001 C CNN
-	1    7550 4200
+P 6600 3900
+F 0 "J1" H 6627 3876 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 6627 3785 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 6600 3900 50  0001 C CNN
+F 3 "~" H 6600 3900 50  0001 C CNN
+	1    6600 3900
 	1    0    0    -1  
 $EndComp
-Text Label 7350 4200 2    50   ~ 0
-LOAD+
-Text Label 7350 4300 2    50   ~ 0
-LOAD-
 Text Label 9200 5000 0    50   ~ 0
-LOAD+
++12.5V
 $Comp
 L Device:D_Shockley D1
 U 1 1 5E17A7E8
@@ -561,12 +557,6 @@ Text Label 2750 6000 0    50   ~ 0
 T2
 Text Label 3100 6450 0    50   ~ 0
 T3
-Text Label 6300 9400 0    50   ~ 0
-T4
-Text Label 6900 8850 0    50   ~ 0
-T5
-Text Label 6900 9400 0    50   ~ 0
-T6
 Wire Wire Line
 	900  7550 2200 7550
 Wire Wire Line
@@ -1295,7 +1285,7 @@ Connection ~ 7200 4800
 Text Label 10600 3400 0    50   ~ 0
 T1
 Text Label 7500 7550 0    50   ~ 0
-LOAD-
+-12.5V
 Wire Wire Line
 	8800 5000 9200 5000
 $Comp
@@ -1618,28 +1608,6 @@ F 3 "" H 8400 850 50  0001 C CNN
 	1    8400 850 
 	1    0    0    -1  
 $EndComp
-$Comp
-L formula:ATMEGA16M1 U?
-U 1 1 5FC49FC2
-P 9500 2700
-F 0 "U?" H 9500 4667 50  0000 C CNN
-F 1 "ATMEGA16M1" H 9500 4576 50  0000 C CNN
-F 2 "footprints:TQFP-32_7x7mm_Pitch0.8mm" H 9500 2700 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8209-8-bit%20AVR%20ATmega16M1-32M1-64M1_Datasheet.pdf" H 8550 4530 50  0001 C CNN
-F 4 "DK" H 9500 2700 60  0001 C CNN "MFN"
-F 5 "ATMEGA16M1-AU-ND" H 9500 2700 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/product-detail/en/atmel/ATMEGA16M1-AU/ATMEGA16M1-AU-ND/2271208" H 8950 4930 60  0001 C CNN "PurchasingLink"
-	1    9500 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8400 850  8400 1000
-Connection ~ 8400 1000
-Wire Wire Line
-	8400 1000 8400 1300
-Connection ~ 8400 1300
-Wire Wire Line
-	8400 1300 8400 1700
 Wire Wire Line
 	8400 3900 8400 3500
 $Comp
@@ -1657,12 +1625,10 @@ Wire Wire Line
 	8400 3500 8250 3500
 Wire Wire Line
 	8250 3500 8250 3600
-Connection ~ 8400 3500
 NoConn ~ 10600 2200
 NoConn ~ 10600 2400
 NoConn ~ 10600 2600
 NoConn ~ 10600 3200
-NoConn ~ 10600 3500
 NoConn ~ 10600 3800
 Text Notes 9250 650  0    50   ~ 10
 Microcontroller
@@ -1889,4 +1855,338 @@ F 3 "~" H 8950 6150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8950 6300 8950 6350
+Wire Notes Line
+	550  4450 9600 4450
+Wire Notes Line
+	9600 4450 9600 7700
+Wire Notes Line
+	9600 7700 550  7700
+Wire Notes Line
+	550  7700 550  4450
+Text Notes 600  4550 0    50   ~ 0
+Safety and Monitoring\n
+Wire Notes Line
+	13150 4450 13150 7100
+Wire Notes Line
+	9650 7100 9650 4450
+Text Notes 9700 4650 0    50   ~ 10
+Step Down Circuitry
+$Comp
+L dk_PMIC-Voltage-Regulators-Linear:LP5907MFX-3_3_NOPB U?
+U 1 1 5FD3AE30
+P 11250 6600
+F 0 "U?" H 11250 7087 60  0000 C CNN
+F 1 "LP5907MFX-3_3_NOPB" H 11250 6981 60  0000 C CNN
+F 2 "digikey-footprints:SOT-753" H 11450 6800 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flp5907" H 11450 6900 60  0001 L CNN
+F 4 "296-38557-1-ND" H 11450 7000 60  0001 L CNN "Digi-Key_PN"
+F 5 "LP5907MFX-3.3/NOPB" H 11450 7100 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 11450 7200 60  0001 L CNN "Category"
+F 7 "PMIC - Voltage Regulators - Linear" H 11450 7300 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flp5907" H 11450 7400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/LP5907MFX-3.3-NOPB/296-38557-1-ND/5034443" H 11450 7500 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC REG LINEAR 3.3V 250MA SOT23-5" H 11450 7600 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 11450 7700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 11450 7800 60  0001 L CNN "Status"
+	1    11250 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5FD47B34
+P 6600 4250
+F 0 "J?" H 6627 4226 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 6627 4135 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 6600 4250 50  0001 C CNN
+F 3 "~" H 6600 4250 50  0001 C CNN
+	1    6600 4250
+	1    0    0    -1  
+$EndComp
+Text Notes 6250 3800 0    50   ~ 10
+To Sensors and Teensy
+Text Notes 6250 4150 0    50   ~ 10
+To Recovery
+Text Notes 6850 3900 0    50   Italic 0
+Need to duplicate for each sensor
+Text Label 10050 5150 2    50   ~ 0
++12.5V
+Text Notes 7650 4750 0    50   ~ 10
+12.5V \n2A\n----->
+$Comp
+L Regulator_Switching:APE1707M-12-HF U?
+U 1 1 5FD959D1
+P 10450 5250
+F 0 "U?" H 10450 5592 50  0000 C CNN
+F 1 "APE1707M-12-HF" H 10450 5501 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 10475 5000 50  0001 L CIN
+F 3 "http://files.remont-aud.net/baza/dc_dc/data/APE1707.pdf" H 10450 5250 50  0001 C CNN
+	1    10450 5250
+	1    0    0    -1  
+$EndComp
+Text Notes 9800 4950 0    50   ~ 10
+Buck\n12.5V -> 12V
+Text Notes 10500 6150 0    50   ~ 10
+LDO\n5V -> 3.3V
+$Comp
+L Regulator_Switching:APE1707M-50-HF U?
+U 1 1 5FD963E0
+P 12150 5250
+F 0 "U?" H 12150 5592 50  0000 C CNN
+F 1 "APE1707M-50-HF" H 12150 5501 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12175 5000 50  0001 L CIN
+F 3 "http://files.remont-aud.net/baza/dc_dc/data/APE1707.pdf" H 12150 5250 50  0001 C CNN
+	1    12150 5250
+	1    0    0    -1  
+$EndComp
+Text Notes 11500 4950 0    50   ~ 10
+Buck\n12V -> 5V
+$Comp
+L power:+12V #PWR?
+U 1 1 5FD97361
+P 11000 5550
+F 0 "#PWR?" H 11000 5400 50  0001 C CNN
+F 1 "+12V" H 11015 5723 50  0000 C CNN
+F 2 "" H 11000 5550 50  0001 C CNN
+F 3 "" H 11000 5550 50  0001 C CNN
+	1    11000 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 5550 11000 5550
+$Comp
+L power:+12V #PWR?
+U 1 1 5FDA3A79
+P 11650 5150
+F 0 "#PWR?" H 11650 5000 50  0001 C CNN
+F 1 "+12V" H 11665 5323 50  0000 C CNN
+F 2 "" H 11650 5150 50  0001 C CNN
+F 3 "" H 11650 5150 50  0001 C CNN
+	1    11650 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11750 5150 11650 5150
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5FDB04CD
+P 8200 2000
+F 0 "#FLG?" H 8200 2075 50  0001 C CNN
+F 1 "PWR_FLAG" H 8200 2174 50  0000 C CNN
+F 2 "" H 8200 2000 50  0001 C CNN
+F 3 "~" H 8200 2000 50  0001 C CNN
+	1    8200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FDBCC84
+P 8200 2000
+F 0 "#PWR?" H 8200 1850 50  0001 C CNN
+F 1 "+5V" H 8215 2173 50  0000 C CNN
+F 2 "" H 8200 2000 50  0001 C CNN
+F 3 "" H 8200 2000 50  0001 C CNN
+	1    8200 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5FDBCDF6
+P 12700 5550
+F 0 "#PWR?" H 12700 5400 50  0001 C CNN
+F 1 "+5V" H 12715 5723 50  0000 C CNN
+F 2 "" H 12700 5550 50  0001 C CNN
+F 3 "" H 12700 5550 50  0001 C CNN
+	1    12700 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12150 5550 12700 5550
+$Comp
+L power:+5V #PWR?
+U 1 1 5FDC9B1A
+P 10500 6400
+F 0 "#PWR?" H 10500 6250 50  0001 C CNN
+F 1 "+5V" H 10515 6573 50  0000 C CNN
+F 2 "" H 10500 6400 50  0001 C CNN
+F 3 "" H 10500 6400 50  0001 C CNN
+	1    10500 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FDD6B21
+P 11800 6400
+F 0 "#PWR?" H 11800 6250 50  0001 C CNN
+F 1 "+3.3V" H 11815 6573 50  0000 C CNN
+F 2 "" H 11800 6400 50  0001 C CNN
+F 3 "" H 11800 6400 50  0001 C CNN
+	1    11800 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11550 6400 11700 6400
+$Comp
+L power:GND #PWR?
+U 1 1 5FDE3E09
+P 11250 6700
+F 0 "#PWR?" H 11250 6450 50  0001 C CNN
+F 1 "GND" H 11255 6527 50  0000 C CNN
+F 2 "" H 11250 6700 50  0001 C CNN
+F 3 "" H 11250 6700 50  0001 C CNN
+	1    11250 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5FDE4B83
+P 6150 4250
+F 0 "#PWR?" H 6150 4100 50  0001 C CNN
+F 1 "+12V" H 6165 4423 50  0000 C CNN
+F 2 "" H 6150 4250 50  0001 C CNN
+F 3 "" H 6150 4250 50  0001 C CNN
+	1    6150 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4250 6400 4250
+$Comp
+L power:GND #PWR?
+U 1 1 5FDF1907
+P 6400 4350
+F 0 "#PWR?" H 6400 4100 50  0001 C CNN
+F 1 "GND" H 6405 4177 50  0000 C CNN
+F 2 "" H 6400 4350 50  0001 C CNN
+F 3 "" H 6400 4350 50  0001 C CNN
+	1    6400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FDF19C2
+P 6150 3900
+F 0 "#PWR?" H 6150 3750 50  0001 C CNN
+F 1 "+3.3V" H 6165 4073 50  0000 C CNN
+F 2 "" H 6150 3900 50  0001 C CNN
+F 3 "" H 6150 3900 50  0001 C CNN
+	1    6150 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3900 6150 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5FDFE871
+P 6400 4000
+F 0 "#PWR?" H 6400 3750 50  0001 C CNN
+F 1 "GND" H 6405 3827 50  0000 C CNN
+F 2 "" H 6400 4000 50  0001 C CNN
+F 3 "" H 6400 4000 50  0001 C CNN
+	1    6400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE01D3B
+P 11750 5350
+F 0 "#PWR?" H 11750 5100 50  0001 C CNN
+F 1 "GND" H 11755 5177 50  0000 C CNN
+F 2 "" H 11750 5350 50  0001 C CNN
+F 3 "" H 11750 5350 50  0001 C CNN
+	1    11750 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FE01E4E
+P 10050 5350
+F 0 "#PWR?" H 10050 5100 50  0001 C CNN
+F 1 "GND" H 10055 5177 50  0000 C CNN
+F 2 "" H 10050 5350 50  0001 C CNN
+F 3 "" H 10050 5350 50  0001 C CNN
+	1    10050 5350
+	1    0    0    -1  
+$EndComp
+Text Label 10600 3500 0    50   ~ 0
+EN_LDO
+Wire Wire Line
+	8400 850  8400 1000
+Connection ~ 8400 1000
+Connection ~ 8400 3500
+Wire Wire Line
+	8400 1300 8400 1700
+Wire Wire Line
+	8400 1000 8400 1300
+Connection ~ 8400 1300
+$Comp
+L formula:ATMEGA16M1 U?
+U 1 1 5FC49FC2
+P 9500 2700
+F 0 "U?" H 9500 4667 50  0000 C CNN
+F 1 "ATMEGA16M1" H 9500 4576 50  0000 C CNN
+F 2 "footprints:TQFP-32_7x7mm_Pitch0.8mm" H 9500 2700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8209-8-bit%20AVR%20ATmega16M1-32M1-64M1_Datasheet.pdf" H 8550 4530 50  0001 C CNN
+F 4 "DK" H 9500 2700 60  0001 C CNN "MFN"
+F 5 "ATMEGA16M1-AU-ND" H 9500 2700 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/product-detail/en/atmel/ATMEGA16M1-AU/ATMEGA16M1-AU-ND/2271208" H 8950 4930 60  0001 C CNN "PurchasingLink"
+	1    9500 2700
+	1    0    0    -1  
+$EndComp
+Text Label 10950 6500 2    50   ~ 0
+EN_LDO
+$Comp
+L Device:C C?
+U 1 1 5FE03E3A
+P 10600 6550
+F 0 "C?" V 10348 6550 50  0000 C CNN
+F 1 "1uF" V 10439 6550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10638 6400 50  0001 C CNN
+F 3 "~" H 10600 6550 50  0001 C CNN
+	1    10600 6550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	10500 6400 10600 6400
+Connection ~ 10600 6400
+Wire Wire Line
+	10600 6400 10950 6400
+$Comp
+L power:GND #PWR?
+U 1 1 5FE1130D
+P 10600 6700
+F 0 "#PWR?" H 10600 6450 50  0001 C CNN
+F 1 "GND" H 10605 6527 50  0000 C CNN
+F 2 "" H 10600 6700 50  0001 C CNN
+F 3 "" H 10600 6700 50  0001 C CNN
+	1    10600 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FE113CA
+P 11700 6550
+F 0 "C?" V 11448 6550 50  0000 C CNN
+F 1 "1uF" V 11539 6550 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 11738 6400 50  0001 C CNN
+F 3 "~" H 11700 6550 50  0001 C CNN
+	1    11700 6550
+	1    0    0    1   
+$EndComp
+Connection ~ 11700 6400
+Wire Wire Line
+	11700 6400 11800 6400
+$Comp
+L power:GND #PWR?
+U 1 1 5FE1E5B1
+P 11700 6700
+F 0 "#PWR?" H 11700 6450 50  0001 C CNN
+F 1 "GND" H 11705 6527 50  0000 C CNN
+F 2 "" H 11700 6700 50  0001 C CNN
+F 3 "" H 11700 6700 50  0001 C CNN
+	1    11700 6700
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	9650 7100 13150 7100
+Wire Notes Line
+	9650 4450 13150 4450
 $EndSCHEMATC
