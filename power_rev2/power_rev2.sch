@@ -1418,9 +1418,9 @@ Wire Notes Line
 Text Notes 11200 750  0    50   ~ 10
 Connections
 Wire Notes Line
-	10730 4550 7030 4550
+	10730 3750 7030 3750
 Wire Notes Line
-	7030 4550 7030 800 
+	7030 3750 7030 0   
 Wire Notes Line
 	7030 800  10730 800 
 Text Notes 2580 7340 0    50   ~ 0
@@ -1756,7 +1756,7 @@ LDO\n12.3V -> 3.3V
 Text Notes 9780 5390 0    50   ~ 0
 Variable Output 12.3V
 Wire Notes Line
-	10730 800  10730 4550
+	10730 20   10730 3770
 Wire Notes Line
 	550  5270 9600 5270
 Wire Notes Line
@@ -2021,4 +2021,105 @@ Wire Wire Line
 	5000 7370 4790 7370
 Text Label 4790 7370 2    50   ~ 0
 VC2
+Text Label 9200 3070 0    50   ~ 0
+VC8
+Text Label 9200 2970 0    50   ~ 0
+VC7
+Text Label 9200 2870 0    50   ~ 0
+VC6
+Text Label 9200 2770 0    50   ~ 0
+VC5B
+Text Label 9200 2570 0    50   ~ 0
+VC4
+Text Label 9200 2470 0    50   ~ 0
+VC3
+Text Label 9200 2370 0    50   ~ 0
+VC2
+Text Label 9200 2670 0    50   ~ 0
+VC5
+Wire Wire Line
+	8150 3070 7830 3070
+$Comp
+L Device:R R?
+U 1 1 5FF0B268
+P 7830 2920
+F 0 "R?" H 7900 2966 50  0000 L CNN
+F 1 "10K" H 7900 2875 50  0000 L CNN
+F 2 "" V 7760 2920 50  0001 C CNN
+F 3 "~" H 7830 2920 50  0001 C CNN
+	1    7830 2920
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2770 7830 2770
+NoConn ~ 8150 2870
+NoConn ~ 8150 2970
+$Comp
+L Device:C C?
+U 1 1 5FF2CD61
+P 7610 3020
+F 0 "C?" H 7495 2974 50  0000 R CNN
+F 1 "1uF" H 7495 3065 50  0000 R CNN
+F 2 "" H 7648 2870 50  0001 C CNN
+F 3 "~" H 7610 3020 50  0001 C CNN
+	1    7610 3020
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8150 3170 7610 3170
+Wire Wire Line
+	7830 2770 7610 2770
+Wire Wire Line
+	7610 2770 7610 2870
+Connection ~ 7830 2770
+$Comp
+L pspice:DIODE D?
+U 1 1 5FF5ADE5
+P 8150 3470
+F 0 "D?" V 8196 3342 50  0000 R CNN
+F 1 "DIODE" V 8105 3342 50  0000 R CNN
+F 2 "" H 8150 3470 50  0001 C CNN
+F 3 "~" H 8150 3470 50  0001 C CNN
+	1    8150 3470
+	0    -1   -1   0   
+$EndComp
+Text Label 8150 3670 3    50   ~ 0
+VC5
+$Comp
+L power:GND #PWR?
+U 1 1 5FF5C48B
+P 7630 2070
+F 0 "#PWR?" H 7630 1820 50  0001 C CNN
+F 1 "GND" H 7635 1897 50  0000 C CNN
+F 2 "" H 7630 2070 50  0001 C CNN
+F 3 "" H 7630 2070 50  0001 C CNN
+	1    7630 2070
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2070 7630 2070
+$Comp
+L Device:C C?
+U 1 1 5FF6830D
+P 7360 2620
+F 0 "C?" H 7245 2574 50  0000 R CNN
+F 1 "1uF" H 7245 2665 50  0000 R CNN
+F 2 "" H 7398 2470 50  0001 C CNN
+F 3 "~" H 7360 2620 50  0001 C CNN
+	1    7360 2620
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8150 2470 7360 2470
+$Comp
+L power:GND #PWR?
+U 1 1 5FF74612
+P 7360 2770
+F 0 "#PWR?" H 7360 2520 50  0001 C CNN
+F 1 "GND" H 7365 2597 50  0000 C CNN
+F 2 "" H 7360 2770 50  0001 C CNN
+F 3 "" H 7360 2770 50  0001 C CNN
+	1    7360 2770
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

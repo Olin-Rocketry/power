@@ -1,7 +1,7 @@
 EESchema Schematic File Version 4
 LIBS:power
 LIBS:74xx
-LIBS:power-cache
+LIBS:power_rev2-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
@@ -40,8 +40,6 @@ F 3 "~" H 3040 7370 50  0001 C CNN
 	1    3040 7370
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	2540 6920 2540 6970
 $Comp
 L formula:CONN_02X03 J3
 U 1 1 5E15A020
@@ -184,20 +182,6 @@ F 3 "~" H 5500 7370 50  0001 C CNN
 	1    5500 7370
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	5000 6920 5000 6970
-Text Label 2240 6320 2    50   ~ 0
-FET1A
-Text Label 2240 6720 2    50   ~ 0
-FET2A
-Text Label 2240 7170 2    50   ~ 0
-FET3A
-Text Label 4700 6320 2    50   ~ 0
-FET1B
-Text Label 4700 6720 2    50   ~ 0
-FET2B
-Text Label 4700 7170 2    50   ~ 0
-FET3B
 Text Notes 3490 5820 0    50   ~ 10
 Thermal Monitoring\n
 Text Label 11750 3300 2    50   ~ 0
@@ -252,16 +236,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/tps25925.pdf" H 8990 6470 50  0001 C CNN
 	1    9390 6070
 	1    0    0    -1  
 $EndComp
-Text Label 9880 3700 0    50   ~ 0
-V2A
-Text Label 9880 1600 0    50   ~ 0
-V3A
-Text Label 9880 1900 0    50   ~ 0
-V1B
-Text Label 9880 2000 0    50   ~ 0
-V2B
-Text Label 9880 2700 0    50   ~ 0
-V3B
 Wire Wire Line
 	2740 5620 3190 5620
 $Comp
@@ -786,20 +760,6 @@ Text Notes 520  780  0    50   ~ 10
 Charging\n
 Text Label 870  8370 2    50   ~ 0
 BAT-
-Text Label 9880 2500 0    50   ~ 0
-FET1A
-Text Label 9880 3500 0    50   ~ 0
-Discharge
-Text Label 9880 2400 0    50   ~ 0
-FET2A
-Text Label 9880 1700 0    50   ~ 0
-FET3A
-Text Label 9880 1800 0    50   ~ 0
-FET1B
-Text Label 9880 3400 0    50   ~ 0
-FET2B
-Text Label 9880 3300 0    50   ~ 0
-FET3B
 Text Label 870  5620 2    50   ~ 0
 BAT+
 $Comp
@@ -856,8 +816,6 @@ Connection ~ 3190 8370
 Wire Wire Line
 	3190 5620 3890 5620
 Connection ~ 3190 5620
-Text Label 9880 3800 0    50   ~ 0
-V1A
 $Comp
 L Device:R R29
 U 1 1 5E527B24
@@ -889,10 +847,6 @@ F 3 "~" H 8180 5920 50  0001 C CNN
 	1    8180 5920
 	1    0    0    -1  
 $EndComp
-Text Label 9880 2300 0    50   ~ 0
-SafetySwitchA
-Text Label 9880 3200 0    50   ~ 0
-RESET
 $Comp
 L Diode:UF5400 D4
 U 1 1 5E5FB181
@@ -941,76 +895,6 @@ F 3 "https://www.infineon.com/dgdl/Infineon-BSB014N04LX3G-DS-v02_03-en.pdf?fileI
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:BS170 Q1
-U 1 1 5E626220
-P 2440 6320
-F 0 "Q1" H 2645 6366 50  0000 L CNN
-F 1 "BS170" H 2645 6275 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2640 6245 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 2440 6320 50  0001 L CNN
-	1    2440 6320
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:BS170 Q2
-U 1 1 5E626576
-P 2440 6720
-F 0 "Q2" H 2645 6766 50  0000 L CNN
-F 1 "BS170" H 2645 6675 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2640 6645 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 2440 6720 50  0001 L CNN
-	1    2440 6720
-	1    0    0    -1  
-$EndComp
-Connection ~ 2540 6520
-$Comp
-L Transistor_FET:BS170 Q3
-U 1 1 5E626689
-P 2440 7170
-F 0 "Q3" H 2645 7216 50  0000 L CNN
-F 1 "BS170" H 2645 7125 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2640 7095 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 2440 7170 50  0001 L CNN
-	1    2440 7170
-	1    0    0    -1  
-$EndComp
-Connection ~ 2540 6970
-$Comp
-L Transistor_FET:BS170 Q5
-U 1 1 5E6267AC
-P 4900 6320
-F 0 "Q5" H 5105 6366 50  0000 L CNN
-F 1 "BS170" H 5105 6275 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5100 6245 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 4900 6320 50  0001 L CNN
-	1    4900 6320
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:BS170 Q7
-U 1 1 5E6268A0
-P 4900 7170
-F 0 "Q7" H 5105 7216 50  0000 L CNN
-F 1 "BS170" H 5105 7125 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5100 7095 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 4900 7170 50  0001 L CNN
-	1    4900 7170
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:BS170 Q6
-U 1 1 5E6269EE
-P 4900 6720
-F 0 "Q6" H 5105 6766 50  0000 L CNN
-F 1 "BS170" H 5105 6675 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5100 6645 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/BS/BS170.pdf" H 4900 6720 50  0001 L CNN
-	1    4900 6720
-	1    0    0    -1  
-$EndComp
-Connection ~ 5000 6520
-Connection ~ 5000 6970
-$Comp
 L Device:D_Zener D?
 U 1 1 5FBB9A58
 P 7390 7920
@@ -1049,50 +933,8 @@ F 3 "~" H 11850 2300 50  0001 C CNN
 	1    11850 2300
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5FC489F2
-P 7680 1250
-F 0 "#PWR?" H 7680 1100 50  0001 C CNN
-F 1 "+3.3V" H 7695 1423 50  0000 C CNN
-F 2 "" H 7680 1250 50  0001 C CNN
-F 3 "" H 7680 1250 50  0001 C CNN
-	1    7680 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7680 4300 7680 3900
-$Comp
-L power:GND #PWR?
-U 1 1 5FD0931F
-P 7530 4000
-F 0 "#PWR?" H 7530 3750 50  0001 C CNN
-F 1 "GND" H 7535 3827 50  0000 C CNN
-F 2 "" H 7530 4000 50  0001 C CNN
-F 3 "" H 7530 4000 50  0001 C CNN
-	1    7530 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7680 3900 7530 3900
-Wire Wire Line
-	7530 3900 7530 4000
-NoConn ~ 9880 2600
-NoConn ~ 9880 2800
-NoConn ~ 9880 3000
-NoConn ~ 9880 3600
-NoConn ~ 9880 4200
 Text Notes 7020 770  0    50   ~ 10
 Microcontroller
-NoConn ~ 9880 4300
-Text Label 9880 1500 0    50   ~ 0
-MOSI
-Text Label 9880 1400 0    50   ~ 0
-MISO
-Text Label 9880 2100 0    50   ~ 0
-SCK
-Text Label 9880 4100 0    50   ~ 0
-RESET
 Text Notes 11650 2750 0    50   ~ 10
 Power INPUT Connectors
 Wire Wire Line
@@ -1159,8 +1001,6 @@ F 3 "~" H 12450 3500 50  0001 C CNN
 	1    12450 3500
 	1    0    0    -1  
 $EndComp
-Text Label 9880 2900 0    50   ~ 0
-SafetySwitchB
 Text Notes 1730 3200 0    50   ~ 0
 1/10 W
 Wire Wire Line
@@ -1328,31 +1168,6 @@ F 1 "GND" H 13455 2577 50  0000 C CNN
 F 2 "" H 13450 2750 50  0001 C CNN
 F 3 "" H 13450 2750 50  0001 C CNN
 	1    13450 2750
-	1    0    0    -1  
-$EndComp
-Text Label 9880 3900 0    50   ~ 0
-EN_LDO
-Wire Wire Line
-	7680 1250 7680 1400
-Connection ~ 7680 1400
-Connection ~ 7680 3900
-Wire Wire Line
-	7680 1700 7680 2100
-Wire Wire Line
-	7680 1400 7680 1700
-Connection ~ 7680 1700
-$Comp
-L formula:ATMEGA16M1 U?
-U 1 1 5FC49FC2
-P 8780 3100
-F 0 "U?" H 8780 5067 50  0000 C CNN
-F 1 "ATMEGA16M1" H 8780 4976 50  0000 C CNN
-F 2 "footprints:TQFP-32_7x7mm_Pitch0.8mm" H 8780 3100 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8209-8-bit%20AVR%20ATmega16M1-32M1-64M1_Datasheet.pdf" H 7830 4930 50  0001 C CNN
-F 4 "DK" H 8780 3100 60  0001 C CNN "MFN"
-F 5 "ATMEGA16M1-AU-ND" H 8780 3100 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/product-detail/en/atmel/ATMEGA16M1-AU/ATMEGA16M1-AU-ND/2271208" H 8230 5330 60  0001 C CNN "PurchasingLink"
-	1    8780 3100
 	1    0    0    -1  
 $EndComp
 Text Label 11940 5960 2    50   ~ 0
@@ -1608,21 +1423,21 @@ Wire Notes Line
 	7030 4550 7030 800 
 Wire Notes Line
 	7030 800  10730 800 
-Text Notes 2290 7420 0    50   ~ 0
+Text Notes 2580 7340 0    50   ~ 0
 0V\n
-Text Notes 2290 7020 0    50   ~ 0
+Text Notes 2580 6940 0    50   ~ 0
 4.1V
-Text Notes 2290 6570 0    50   ~ 0
+Text Notes 2590 6490 0    50   ~ 0
 8.2V
-Text Notes 2290 6170 0    50   ~ 0
+Text Notes 2580 6100 0    50   ~ 0
 12.3V
-Text Notes 4750 6170 0    50   ~ 0
+Text Notes 5030 6100 0    50   ~ 0
 12.3V
-Text Notes 4750 6570 0    50   ~ 0
+Text Notes 5030 6500 0    50   ~ 0
 8.2V
-Text Notes 4750 7020 0    50   ~ 0
+Text Notes 5030 6950 0    50   ~ 0
 4.1V
-Text Notes 4750 7420 0    50   ~ 0
+Text Notes 5030 7350 0    50   ~ 0
 0V\n
 Text Notes 3490 5920 0    50   ~ 10
 Voltage Monitoring\n
@@ -1771,27 +1586,13 @@ F 3 "~" H 3040 6970 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	3190 5970 3190 6120
-Wire Wire Line
 	2540 7370 2890 7370
-Wire Wire Line
-	2540 6120 3190 6120
-Connection ~ 3190 6120
-Wire Wire Line
-	3190 6120 3190 6220
 Wire Wire Line
 	5000 6970 5350 6970
 Wire Wire Line
 	5000 7370 5350 7370
 Wire Wire Line
 	5000 6520 5350 6520
-Wire Wire Line
-	5650 5970 5650 6120
-Wire Wire Line
-	5000 6120 5650 6120
-Connection ~ 5650 6120
-Wire Wire Line
-	5650 6120 5650 6220
 $Comp
 L Device:R R?
 U 1 1 6014A10D
@@ -2043,4 +1844,181 @@ Wire Wire Line
 	870  8370 3190 8370
 Wire Wire Line
 	1740 5620 2440 5620
+$Comp
+L formula:BQ76930 U?
+U 1 1 5FEBF8D9
+P 8500 2270
+F 0 "U?" H 8675 2985 50  0000 C CNN
+F 1 "BQ76930" H 8675 2894 50  0000 C CNN
+F 2 "" H 8100 2220 50  0001 C CNN
+F 3 "" H 8100 2220 50  0001 C CNN
+	1    8500 2270
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FEC1241
+P 2540 6310
+F 0 "C?" H 2655 6356 50  0000 L CNN
+F 1 "C" H 2655 6265 50  0000 L CNN
+F 2 "" H 2578 6160 50  0001 C CNN
+F 3 "~" H 2540 6310 50  0001 C CNN
+	1    2540 6310
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2540 6120 2540 6160
+Wire Wire Line
+	2540 6460 2540 6520
+$Comp
+L Device:C C?
+U 1 1 5FEDC77C
+P 2540 6750
+F 0 "C?" H 2655 6796 50  0000 L CNN
+F 1 "C" H 2655 6705 50  0000 L CNN
+F 2 "" H 2578 6600 50  0001 C CNN
+F 3 "~" H 2540 6750 50  0001 C CNN
+	1    2540 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FEDC876
+P 2540 7180
+F 0 "C?" H 2655 7226 50  0000 L CNN
+F 1 "C" H 2655 7135 50  0000 L CNN
+F 2 "" H 2578 7030 50  0001 C CNN
+F 3 "~" H 2540 7180 50  0001 C CNN
+	1    2540 7180
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2540 6900 2540 6970
+Connection ~ 2540 6970
+Wire Wire Line
+	2540 6970 2540 7030
+Wire Wire Line
+	2540 6600 2540 6520
+Connection ~ 2540 6520
+Wire Wire Line
+	2540 7330 2540 7370
+$Comp
+L Device:C C?
+U 1 1 5FF02A6A
+P 5000 6310
+F 0 "C?" H 5115 6356 50  0000 L CNN
+F 1 "C" H 5115 6265 50  0000 L CNN
+F 2 "" H 5038 6160 50  0001 C CNN
+F 3 "~" H 5000 6310 50  0001 C CNN
+	1    5000 6310
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FF02A71
+P 5000 6750
+F 0 "C?" H 5115 6796 50  0000 L CNN
+F 1 "C" H 5115 6705 50  0000 L CNN
+F 2 "" H 5038 6600 50  0001 C CNN
+F 3 "~" H 5000 6750 50  0001 C CNN
+	1    5000 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FF02A78
+P 5000 7180
+F 0 "C?" H 5115 7226 50  0000 L CNN
+F 1 "C" H 5115 7135 50  0000 L CNN
+F 2 "" H 5038 7030 50  0001 C CNN
+F 3 "~" H 5000 7180 50  0001 C CNN
+	1    5000 7180
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 6120 5000 6160
+Wire Wire Line
+	5000 6460 5000 6520
+Connection ~ 5000 6520
+Wire Wire Line
+	5000 6520 5000 6600
+Wire Wire Line
+	5000 6900 5000 6970
+Connection ~ 5000 6970
+Wire Wire Line
+	5000 6970 5000 7030
+Wire Wire Line
+	5000 7330 5000 7370
+Wire Wire Line
+	2540 6120 2890 6120
+Wire Wire Line
+	3190 5970 3190 6120
+$Comp
+L Device:R R?
+U 1 1 5FF3CBE7
+P 3040 6120
+F 0 "R?" V 2833 6120 50  0000 C CNN
+F 1 "100" V 2924 6120 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2970 6120 50  0001 C CNN
+F 3 "~" H 3040 6120 50  0001 C CNN
+	1    3040 6120
+	0    -1   1    0   
+$EndComp
+Connection ~ 3190 6120
+Wire Wire Line
+	3190 6120 3190 6220
+$Comp
+L Device:R R?
+U 1 1 5FF3CF70
+P 5440 6120
+F 0 "R?" V 5233 6120 50  0000 C CNN
+F 1 "100" V 5324 6120 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5370 6120 50  0001 C CNN
+F 3 "~" H 5440 6120 50  0001 C CNN
+	1    5440 6120
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5650 5970 5650 6120
+Wire Wire Line
+	5000 6120 5290 6120
+Wire Wire Line
+	5590 6120 5650 6120
+Connection ~ 5650 6120
+Wire Wire Line
+	5650 6120 5650 6220
+Wire Wire Line
+	2540 6120 2320 6120
+Connection ~ 2540 6120
+Wire Wire Line
+	2540 6520 2330 6520
+Text Label 2320 6120 2    50   ~ 0
+VC8
+Text Label 2330 6520 2    50   ~ 0
+VC7
+Wire Wire Line
+	2540 6970 2340 6970
+Text Label 2340 6970 2    50   ~ 0
+VC6
+Wire Wire Line
+	2540 7370 2330 7370
+Connection ~ 2540 7370
+Text Label 2330 7370 2    50   ~ 0
+VC5B
+Wire Wire Line
+	5000 6120 4780 6120
+Wire Wire Line
+	5000 6520 4790 6520
+Text Label 4780 6120 2    50   ~ 0
+VC5
+Text Label 4790 6520 2    50   ~ 0
+VC4
+Wire Wire Line
+	5000 6970 4800 6970
+Text Label 4800 6970 2    50   ~ 0
+VC3
+Wire Wire Line
+	5000 7370 4790 7370
+Text Label 4790 7370 2    50   ~ 0
+VC2
 $EndSCHEMATC
