@@ -92,17 +92,6 @@ Wire Wire Line
 	12300 1400 12450 1400
 Wire Wire Line
 	12300 1600 12450 1600
-$Comp
-L Connector:Conn_01x06_Female J4
-U 1 1 5E160DCB
-P 11950 3500
-F 0 "J4" H 11977 3476 50  0000 L CNN
-F 1 "Conn_01x06_Female" V 11500 3200 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x06_P1.00mm_Vertical" H 11950 3500 50  0001 C CNN
-F 3 "~" H 11950 3500 50  0001 C CNN
-	1    11950 3500
-	1    0    0    -1  
-$EndComp
 Text Notes 11650 3150 0    50   ~ 10
 Battery Connectors
 Text Notes 11650 2050 0    50   ~ 10
@@ -200,11 +189,9 @@ Text Label 4700 7170 2    50   ~ 0
 FET3B
 Text Notes 3490 5820 0    50   ~ 10
 Thermal Monitoring\n
-Text Label 11750 3300 2    50   ~ 0
-B1A-
-Text Label 11750 3400 2    50   ~ 0
+Text Label 11610 3600 2    50   ~ 0
 B2A-
-Text Label 11750 3500 2    50   ~ 0
+Text Label 11610 3840 2    50   ~ 0
 B3A-
 Text Label 3240 6620 0    50   ~ 0
 B2A+
@@ -1148,17 +1135,6 @@ B3B-
 Wire Wire Line
 	5650 7170 5650 7370
 Connection ~ 5650 7370
-$Comp
-L Connector:Conn_01x06_Female J5
-U 1 1 5FDE0E9F
-P 12450 3500
-F 0 "J5" H 12477 3476 50  0000 L CNN
-F 1 "Conn_01x06_Female" V 12550 3200 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x06_P1.00mm_Vertical" H 12450 3500 50  0001 C CNN
-F 3 "~" H 12450 3500 50  0001 C CNN
-	1    12450 3500
-	1    0    0    -1  
-$EndComp
 Text Label 9880 2900 0    50   ~ 0
 SafetySwitchB
 Text Notes 1730 3200 0    50   ~ 0
@@ -1993,23 +1969,23 @@ Text Label 5700 6620 0    50   ~ 0
 B2B+
 Text Label 5700 6720 0    50   ~ 0
 B2B-
-Text Label 11750 3600 2    50   ~ 0
+Text Label 12460 3370 2    50   ~ 0
 B1B-
-Text Label 11750 3700 2    50   ~ 0
+Text Label 12470 3610 2    50   ~ 0
 B2B-
-Text Label 11750 3800 2    50   ~ 0
+Text Label 12470 3850 2    50   ~ 0
 B3B-
-Text Label 12250 3300 2    50   ~ 0
+Text Label 11600 3250 2    50   ~ 0
 B1A+
-Text Label 12250 3400 2    50   ~ 0
+Text Label 11610 3500 2    50   ~ 0
 B2A+
-Text Label 12250 3500 2    50   ~ 0
+Text Label 11610 3740 2    50   ~ 0
 B3A+
-Text Label 12250 3600 2    50   ~ 0
+Text Label 12460 3270 2    50   ~ 0
 B1B+
-Text Label 12250 3700 2    50   ~ 0
+Text Label 12470 3510 2    50   ~ 0
 B2B+
-Text Label 12250 3800 2    50   ~ 0
+Text Label 12470 3750 2    50   ~ 0
 B3B+
 $Comp
 L Switch:SW_Push SW1
@@ -2043,4 +2019,83 @@ Wire Wire Line
 	870  8370 3190 8370
 Wire Wire Line
 	1740 5620 2440 5620
+$Comp
+L Connector:Conn_01x02_Female J4
+U 1 1 5FF800A6
+P 11800 3250
+F 0 "J4" H 11827 3226 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 11827 3135 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 11800 3250 50  0001 C CNN
+F 3 "~" H 11800 3250 50  0001 C CNN
+	1    11800 3250
+	1    0    0    -1  
+$EndComp
+Text Label 11600 3350 2    50   ~ 0
+B1A-
+$Comp
+L Connector:Conn_01x02_Female J5
+U 1 1 5FF805ED
+P 11810 3500
+F 0 "J5" H 11837 3476 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 11837 3385 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 11810 3500 50  0001 C CNN
+F 3 "~" H 11810 3500 50  0001 C CNN
+	1    11810 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J12
+U 1 1 5FF89EE4
+P 11810 3740
+F 0 "J12" H 11837 3716 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 11837 3625 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 11810 3740 50  0001 C CNN
+F 3 "~" H 11810 3740 50  0001 C CNN
+	1    11810 3740
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J13
+U 1 1 5FF8A5BC
+P 12660 3270
+F 0 "J13" H 12687 3246 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 12687 3155 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 12660 3270 50  0001 C CNN
+F 3 "~" H 12660 3270 50  0001 C CNN
+	1    12660 3270
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J14
+U 1 1 5FF94101
+P 12670 3510
+F 0 "J14" H 12697 3486 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 12697 3395 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 12670 3510 50  0001 C CNN
+F 3 "~" H 12670 3510 50  0001 C CNN
+	1    12670 3510
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J15
+U 1 1 5FF9440E
+P 12670 3750
+F 0 "J15" H 12697 3726 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 12697 3635 50  0000 L CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 12670 3750 50  0001 C CNN
+F 3 "~" H 12670 3750 50  0001 C CNN
+	1    12670 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Thermistor_NTC TH?
+U 1 1 5FFA8A9D
+P 4610 820
+F 0 "TH?" V 4320 820 50  0000 C CNN
+F 1 "Thermistor_NTC" V 4411 820 50  0000 C CNN
+F 2 "" H 4610 870 50  0001 C CNN
+F 3 "~" H 4610 870 50  0001 C CNN
+	1    4610 820 
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

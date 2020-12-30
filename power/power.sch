@@ -775,8 +775,6 @@ Text Label 870  8370 2    50   ~ 0
 BAT-
 Text Label 9880 2500 0    50   ~ 0
 FET1A
-Text Label 9880 3500 0    50   ~ 0
-Discharge
 Text Label 9880 2400 0    50   ~ 0
 FET2A
 Text Label 9880 1700 0    50   ~ 0
@@ -876,8 +874,6 @@ F 3 "~" H 8180 5920 50  0001 C CNN
 	1    8180 5920
 	1    0    0    -1  
 $EndComp
-Text Label 9880 2300 0    50   ~ 0
-SafetySwitchA
 Text Label 9880 3200 0    50   ~ 0
 RESET
 $Comp
@@ -1135,8 +1131,6 @@ B3B-
 Wire Wire Line
 	5650 7170 5650 7370
 Connection ~ 5650 7370
-Text Label 9880 2900 0    50   ~ 0
-SafetySwitchB
 Text Notes 1730 3200 0    50   ~ 0
 1/10 W
 Wire Wire Line
