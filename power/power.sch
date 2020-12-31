@@ -2081,15 +2081,4 @@ F 3 "~" H 12670 3750 50  0001 C CNN
 	1    12670 3750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Thermistor_NTC TH?
-U 1 1 5FFA8A9D
-P 4610 820
-F 0 "TH?" V 4320 820 50  0000 C CNN
-F 1 "Thermistor_NTC" V 4411 820 50  0000 C CNN
-F 2 "" H 4610 870 50  0001 C CNN
-F 3 "~" H 4610 870 50  0001 C CNN
-	1    4610 820 
-	0    1    1    0   
-$EndComp
 $EndSCHEMATC
