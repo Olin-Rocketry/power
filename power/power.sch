@@ -67,17 +67,6 @@ RESET
 Text Label 6160 1500 0    50   ~ 0
 MOSI
 $Comp
-L power:VCC #PWR0101
-U 1 1 5E15CCC8
-P 6310 1400
-F 0 "#PWR0101" H 6310 1250 50  0001 C CNN
-F 1 "VCC" H 6327 1573 50  0000 C CNN
-F 2 "" H 6310 1400 50  0001 C CNN
-F 3 "" H 6310 1400 50  0001 C CNN
-	1    6310 1400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0102
 U 1 1 5E15CDA1
 P 6310 1600
@@ -239,15 +228,15 @@ F 3 "http://www.ti.com/lit/ds/symlink/tps25925.pdf" H 8990 6470 50  0001 C CNN
 	1    9390 6070
 	1    0    0    -1  
 $EndComp
-Text Label 3740 3700 0    50   ~ 0
+Text Label 3740 3500 0    50   ~ 0
 V2A
-Text Label 3740 1600 0    50   ~ 0
+Text Label 3740 2500 0    50   ~ 0
 V3A
-Text Label 3740 1900 0    50   ~ 0
-V1B
 Text Label 3740 2000 0    50   ~ 0
+V1B
+Text Label 3740 3000 0    50   ~ 0
 V2B
-Text Label 3740 2700 0    50   ~ 0
+Text Label 3740 1700 0    50   ~ 0
 V3B
 Wire Wire Line
 	2740 5620 3190 5620
@@ -272,13 +261,13 @@ Text Label 3740 3400 0    50   ~ 0
 FET1A
 Text Label 3740 2400 0    50   ~ 0
 FET2A
-Text Label 3740 2500 0    50   ~ 0
+Text Label 3740 2600 0    50   ~ 0
 FET3A
-Text Label 3740 1800 0    50   ~ 0
+Text Label 3740 1900 0    50   ~ 0
 FET1B
-Text Label 3740 1700 0    50   ~ 0
+Text Label 3740 1800 0    50   ~ 0
 FET2B
-Text Label 3740 3300 0    50   ~ 0
+Text Label 3740 2900 0    50   ~ 0
 FET3B
 Text Label 870  5620 2    50   ~ 0
 BAT+
@@ -336,7 +325,7 @@ Connection ~ 3190 8370
 Wire Wire Line
 	3190 5620 3890 5620
 Connection ~ 3190 5620
-Text Label 3740 3800 0    50   ~ 0
+Text Label 3740 3300 0    50   ~ 0
 V1A
 $Comp
 L Device:R R29
@@ -497,9 +486,7 @@ Wire Wire Line
 	1540 3900 1390 3900
 Wire Wire Line
 	1390 3900 1390 4000
-NoConn ~ 3740 2600
 NoConn ~ 3740 2800
-NoConn ~ 3740 3000
 NoConn ~ 3740 3600
 NoConn ~ 3740 4200
 Text Notes 880  770  0    50   ~ 10
@@ -1498,5 +1485,20 @@ F 5 "1SMB5928BT3GOSCT-ND" H 7490 8120 60  0001 C CNN "MPN"
 F 6 "https://www.digikey.com/product-detail/en/1SMB5928BT3G/1SMB5928BT3GOSCT-ND/917730?WT.z_cid=ref_octopart_dkc_buynow&site=us" H 7790 8420 60  0001 C CNN "PurchasingLink"
 	1    7390 7920
 	0    1    1    0   
+$EndComp
+NoConn ~ 3740 1600
+NoConn ~ 3740 2300
+NoConn ~ 3740 3700
+NoConn ~ 3740 3800
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FF49F28
+P 6310 1400
+F 0 "#PWR?" H 6310 1250 50  0001 C CNN
+F 1 "+3.3V" H 6325 1573 50  0000 C CNN
+F 2 "" H 6310 1400 50  0001 C CNN
+F 3 "" H 6310 1400 50  0001 C CNN
+	1    6310 1400
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
