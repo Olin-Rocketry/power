@@ -272,11 +272,11 @@ Text Label 3740 2500 0    50   ~ 0
 FET1A
 Text Label 3740 2400 0    50   ~ 0
 FET2A
-Text Label 3740 1700 0    50   ~ 0
+Text Label 3740 3400 0    50   ~ 0
 FET3A
 Text Label 3740 1800 0    50   ~ 0
 FET1B
-Text Label 3740 3400 0    50   ~ 0
+Text Label 3740 1700 0    50   ~ 0
 FET2B
 Text Label 3740 3300 0    50   ~ 0
 FET3B
@@ -1486,10 +1486,10 @@ F 6 "https://www.digikey.com/product-detail/en/cui-inc/PJ-037A/CP-037A-ND/164454
 	1    0    0    -1  
 $EndComp
 $Comp
-L formula:D_Zener_13V D?
+L formula:D_Zener_13V D3
 U 1 1 5FF6B278
 P 7390 7920
-F 0 "D?" V 7344 7999 50  0000 L CNN
+F 0 "D3" V 7344 7999 50  0000 L CNN
 F 1 "D_Zener_13V" V 7435 7999 50  0000 L CNN
 F 2 "footprints:D_13V_Zener" H 7290 7920 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/1SMB5913BT3-D.PDF" H 7390 8020 50  0001 C CNN

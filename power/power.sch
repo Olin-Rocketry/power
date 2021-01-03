@@ -268,15 +268,15 @@ Text Label 4120 7320 0    50   ~ 0
 V3A
 Text Label 870  8370 2    50   ~ 0
 BAT-
-Text Label 3740 2500 0    50   ~ 0
+Text Label 3740 3400 0    50   ~ 0
 FET1A
 Text Label 3740 2400 0    50   ~ 0
 FET2A
-Text Label 3740 1700 0    50   ~ 0
+Text Label 3740 2500 0    50   ~ 0
 FET3A
 Text Label 3740 1800 0    50   ~ 0
 FET1B
-Text Label 3740 3400 0    50   ~ 0
+Text Label 3740 1700 0    50   ~ 0
 FET2B
 Text Label 3740 3300 0    50   ~ 0
 FET3B
