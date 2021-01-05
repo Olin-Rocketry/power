@@ -1,0 +1,18 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"J14,J15,J13,J12,J1,J6,J7,J8,J9,J10,J11,J4,J5";"PinHeader_1x02_P1.00mm_Vertical";13;"Conn_01x02_Female";;;
+2;"C1";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"0.1uF";;;
+3;"C5,C6,C7";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";3;"1uF";;;
+4;"Q1,Q2,Q3,Q5,Q6,Q7";"TO-92_Inline";6;"BS170";;;
+5;"R7,R11,R12,R14,R16,R20";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";6;"1.5K";;;
+6;"R8,R9,R10,R17,R18,R19";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";6;"100";;;
+7;"R26";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"133";;;
+8;"R27";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"20";;;
+9;"R29";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"115K";;;
+10;"U2";"VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias";1;"TPS2592xx";;;
+11;"U4";"SOT-753";1;"LP5907MFX-3_3_NOPB";;;
+12;"D1,D2";"SD103AW-13-F";2;"D_Shockley";;;
+13;"J3";"Pin_Header_Straight_2x03";1;"CONN_02X03";;;
+14;"U3";"TQFP-32_7x7mm_Pitch0.8mm";1;"ATMEGA16M1";;;
+15;"TH1,TH2,TH3,TH5,TH6,TH7";"Thermistor";6;"Thermistor";;;
+16;"J2";"barrel_jack_PJ-037A";1;"Charging";;;
+17;"D3";"D_13V_Zener";1;"D_Zener_13V";;;
