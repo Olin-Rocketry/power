@@ -1341,7 +1341,7 @@ U 1 1 5FF800A6
 P 5390 3140
 F 0 "J1" H 5417 3116 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 5417 3025 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 5390 3140 50  0001 C CNN
+F 2 "footprints:nickel_pad_bms" H 5390 3140 50  0001 C CNN
 F 3 "~" H 5390 3140 50  0001 C CNN
 	1    5390 3140
 	1    0    0    -1  
@@ -1354,7 +1354,7 @@ U 1 1 5FF805ED
 P 5400 3390
 F 0 "J3" H 5427 3366 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 5427 3275 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 5400 3390 50  0001 C CNN
+F 2 "footprints:nickel_pad_bms" H 5400 3390 50  0001 C CNN
 F 3 "~" H 5400 3390 50  0001 C CNN
 	1    5400 3390
 	1    0    0    -1  
@@ -1365,7 +1365,7 @@ U 1 1 5FF89EE4
 P 5400 3630
 F 0 "J4" H 5427 3606 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 5427 3515 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 5400 3630 50  0001 C CNN
+F 2 "footprints:nickel_pad_bms" H 5400 3630 50  0001 C CNN
 F 3 "~" H 5400 3630 50  0001 C CNN
 	1    5400 3630
 	1    0    0    -1  
@@ -1376,7 +1376,7 @@ U 1 1 5FF8A5BC
 P 6250 3160
 F 0 "J6" H 6277 3136 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 6277 3045 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 6250 3160 50  0001 C CNN
+F 2 "footprints:nickel_pad_bms" H 6250 3160 50  0001 C CNN
 F 3 "~" H 6250 3160 50  0001 C CNN
 	1    6250 3160
 	1    0    0    -1  
@@ -1387,7 +1387,7 @@ U 1 1 5FF94101
 P 6260 3400
 F 0 "J7" H 6287 3376 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 6287 3285 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 6260 3400 50  0001 C CNN
+F 2 "footprints:nickel_pad_bms" H 6260 3400 50  0001 C CNN
 F 3 "~" H 6260 3400 50  0001 C CNN
 	1    6260 3400
 	1    0    0    -1  
@@ -1398,7 +1398,7 @@ U 1 1 5FF9440E
 P 6260 3640
 F 0 "J8" H 6287 3616 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 6287 3525 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 6260 3640 50  0001 C CNN
+F 2 "footprints:nickel_pad_bms" H 6260 3640 50  0001 C CNN
 F 3 "~" H 6260 3640 50  0001 C CNN
 	1    6260 3640
 	1    0    0    -1  
@@ -1530,7 +1530,7 @@ U 1 1 5DE79A1A
 P 10189 2819
 F 0 "sol1" H 10172 2915 59  0000 C CNN
 F 1 "OSTTC03" H 10172 2810 59  0000 C CNN
-F 2 "recovery-trigger-sp20:OSTTC030162" H 10089 2669 59  0001 C CNN
+F 2 "footprints:OSTTC030162" H 10089 2669 59  0001 C CNN
 F 3 "http://www.on-shore.com/wp-content/uploads/OSTTCXX0162.pdf" H 10089 2669 59  0001 C CNN
 F 4 "https://www.digikey.com/product-detail/en/on-shore-technology-inc/OSTTC030162/ED2601-ND/614550" H 10189 2969 59  0001 C CNN "Purchasing Link"
 F 5 " OSTTC030162 " H 10189 2819 59  0001 C CNN "MPN"
@@ -1600,7 +1600,7 @@ U 1 1 5DF7F358
 P 13885 1129
 F 0 "tres1sol1" H 13885 1394 50  0000 C CNN
 F 1 "NMOS_CDS16" H 13885 1303 50  0000 C CNN
-F 2 "recovery-trigger-sp20:CSD16322Q5" H 13085 1329 50  0001 C CNN
+F 2 "footprints:TRANS_CSD17312Q5" H 13085 1329 50  0001 C CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd16322q5" H 13985 1479 50  0001 C CNN
 F 4 "CSD16322Q5" H 14085 1629 50  0001 C CNN "MPN"
 F 5 "296-25112-1-ND" H 13435 1629 50  0001 C CNN "DPN"
@@ -1775,7 +1775,7 @@ U 1 1 5FD42111
 P 13936 2756
 F 0 "tres1sol2" H 13936 3021 50  0000 C CNN
 F 1 "NMOS_CDS16" H 13936 2930 50  0000 C CNN
-F 2 "recovery-trigger-sp20:CSD16322Q5" H 13136 2956 50  0001 C CNN
+F 2 "footprints:TRANS_CSD17312Q5" H 13136 2956 50  0001 C CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd16322q5" H 14036 3106 50  0001 C CNN
 F 4 "CSD16322Q5" H 14136 3256 50  0001 C CNN "MPN"
 F 5 "296-25112-1-ND" H 13486 3256 50  0001 C CNN "DPN"
@@ -1820,7 +1820,7 @@ U 1 1 5FD455BE
 P 11391 2823
 F 0 "sol2" H 11374 2919 59  0000 C CNN
 F 1 "OSTTC03" H 11374 2814 59  0000 C CNN
-F 2 "recovery-trigger-sp20:OSTTC030162" H 11291 2673 59  0001 C CNN
+F 2 "footprints:OSTTC030162" H 11291 2673 59  0001 C CNN
 F 3 "http://www.on-shore.com/wp-content/uploads/OSTTCXX0162.pdf" H 11291 2673 59  0001 C CNN
 F 4 "https://www.digikey.com/product-detail/en/on-shore-technology-inc/OSTTC030162/ED2601-ND/614550" H 11391 2973 59  0001 C CNN "Purchasing Link"
 F 5 " OSTTC030162 " H 11391 2823 59  0001 C CNN "MPN"

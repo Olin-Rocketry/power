@@ -1530,7 +1530,7 @@ U 1 1 5DE79A1A
 P 10189 2819
 F 0 "sol1" H 10172 2915 59  0000 C CNN
 F 1 "OSTTC03" H 10172 2810 59  0000 C CNN
-F 2 "recovery-trigger-sp20:OSTTC030162" H 10089 2669 59  0001 C CNN
+F 2 "footprints:OSTTC030162" H 10089 2669 59  0001 C CNN
 F 3 "http://www.on-shore.com/wp-content/uploads/OSTTCXX0162.pdf" H 10089 2669 59  0001 C CNN
 F 4 "https://www.digikey.com/product-detail/en/on-shore-technology-inc/OSTTC030162/ED2601-ND/614550" H 10189 2969 59  0001 C CNN "Purchasing Link"
 F 5 " OSTTC030162 " H 10189 2819 59  0001 C CNN "MPN"
@@ -1600,7 +1600,7 @@ U 1 1 5DF7F358
 P 13885 1129
 F 0 "tres1sol1" H 13885 1394 50  0000 C CNN
 F 1 "NMOS_CDS16" H 13885 1303 50  0000 C CNN
-F 2 "recovery-trigger-sp20:CSD16322Q5" H 13085 1329 50  0001 C CNN
+F 2 "footprints:TRANS_CSD17312Q5" H 13085 1329 50  0001 C CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd16322q5" H 13985 1479 50  0001 C CNN
 F 4 "CSD16322Q5" H 14085 1629 50  0001 C CNN "MPN"
 F 5 "296-25112-1-ND" H 13435 1629 50  0001 C CNN "DPN"
@@ -1775,7 +1775,7 @@ U 1 1 5FD42111
 P 13936 2756
 F 0 "tres1sol2" H 13936 3021 50  0000 C CNN
 F 1 "NMOS_CDS16" H 13936 2930 50  0000 C CNN
-F 2 "recovery-trigger-sp20:CSD16322Q5" H 13136 2956 50  0001 C CNN
+F 2 "footprints:TRANS_CSD17312Q5" H 13136 2956 50  0001 C CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fcsd16322q5" H 14036 3106 50  0001 C CNN
 F 4 "CSD16322Q5" H 14136 3256 50  0001 C CNN "MPN"
 F 5 "296-25112-1-ND" H 13486 3256 50  0001 C CNN "DPN"
@@ -1820,7 +1820,7 @@ U 1 1 5FD455BE
 P 11391 2823
 F 0 "sol2" H 11374 2919 59  0000 C CNN
 F 1 "OSTTC03" H 11374 2814 59  0000 C CNN
-F 2 "recovery-trigger-sp20:OSTTC030162" H 11291 2673 59  0001 C CNN
+F 2 "footprints:OSTTC030162" H 11291 2673 59  0001 C CNN
 F 3 "http://www.on-shore.com/wp-content/uploads/OSTTCXX0162.pdf" H 11291 2673 59  0001 C CNN
 F 4 "https://www.digikey.com/product-detail/en/on-shore-technology-inc/OSTTC030162/ED2601-ND/614550" H 11391 2973 59  0001 C CNN "Purchasing Link"
 F 5 " OSTTC030162 " H 11391 2823 59  0001 C CNN "MPN"

@@ -1,5 +1,5 @@
 Drill report for /home/dpatel1/Documents/Rocketry/Olin-Rocketry/power/power/power.kicad_pcb
-Created on Tue 05 Jan 2021 01:43:15 PM CST
+Created on Mon 11 Jan 2021 06:58:57 AM CST
 
 Copper Layer Stackup:
     =============================================================
@@ -11,13 +11,15 @@ Drill file 'power.drl' contains
     plated through holes:
     =============================================================
     T1  0.30mm  0.012"  (5 holes)
-    T2  0.40mm  0.016"  (28 holes)
-    T3  0.50mm  0.020"  (26 holes)
+    T2  0.40mm  0.016"  (24 holes)
+    T3  0.50mm  0.020"  (12 holes)
     T4  0.75mm  0.030"  (18 holes)
-    T5  1.00mm  0.039"  (2 holes)  (with 2 slots)
+    T5  1.00mm  0.039"  (5 holes)  (with 2 slots)
     T6  1.02mm  0.040"  (6 holes)
+    T7  1.27mm  0.050"  (2 holes)
+    T8  1.30mm  0.051"  (6 holes)
 
-    Total plated holes count 85
+    Total plated holes count 78
 
 
 Not plated through holes are merged with plated holes
