@@ -615,4 +615,27 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
+# rocketry_MM_F_RA_08
+#
+DEF rocketry_MM_F_RA_08 J 0 40 Y Y 1 F N
+F0 "J" 0 400 60 H V C CNN
+F1 "rocketry_MM_F_RA_08" 50 -550 60 H V C CNN
+F2 "footprints:micromatch_female_ra_8" -100 300 60 H I C CNN
+F3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F338070%7FG1%7Fpdf%7FEnglish%7FENG_CD_338070_G1.pdf%7F338070-8" 0 400 60 H I C CNN
+F4 "TE" 100 1400 60 H I C CNN "MFN"
+F5 "338070-8" 200 1500 60 H I C CNN "MPN"
+F6 "http://www.te.com/usa-en/product-338070-8.html" 100 500 60 H I C CNN "PurchasingLink"
+DRAW
+S 150 -450 -150 350 0 1 0 f
+X 1 1 250 300 100 L 50 50 1 1 B
+X 2 2 250 200 100 L 50 50 1 1 B
+X 3 3 250 100 100 L 50 50 1 1 B
+X 4 4 250 0 100 L 50 50 1 1 B
+X 5 5 250 -100 100 L 50 50 1 1 B
+X 6 6 250 -200 100 L 50 50 1 1 B
+X 7 7 250 -300 100 L 50 50 1 1 B
+X 8 8 250 -400 100 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
 #End Library

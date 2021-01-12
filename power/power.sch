@@ -185,17 +185,6 @@ B3A-
 Text Label 1840 6110 0    50   ~ 0
 B2A+
 $Comp
-L Connector:Conn_01x02_Female J11
-U 1 1 5E179EB6
-P 7240 2540
-F 0 "J11" H 7267 2516 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 7267 2425 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 7240 2540 50  0001 C CNN
-F 3 "~" H 7240 2540 50  0001 C CNN
-	1    7240 2540
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D_Shockley D1
 U 1 1 5E17A7E8
 P 1190 5110
@@ -592,7 +581,7 @@ F 12 "Active" H 10890 6780 60  0001 L CNN "Status"
 	1    10690 5580
 	1    0    0    -1  
 $EndComp
-Text Notes 6990 2390 0    50   ~ 10
+Text Notes 8910 2280 0    50   ~ 10
 To Teensy
 Text Notes 7240 5060 0    50   ~ 0
 12.3V \n4A\n----->
@@ -629,30 +618,6 @@ F 1 "+12V" H 10045 1813 50  0000 C CNN
 F 2 "" H 10030 1640 50  0001 C CNN
 F 3 "" H 10030 1640 50  0001 C CNN
 	1    10030 1640
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0111
-U 1 1 5FDF19C2
-P 6790 2540
-F 0 "#PWR0111" H 6790 2390 50  0001 C CNN
-F 1 "+3.3V" H 6805 2713 50  0000 C CNN
-F 2 "" H 6790 2540 50  0001 C CNN
-F 3 "" H 6790 2540 50  0001 C CNN
-	1    6790 2540
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7040 2540 6790 2540
-$Comp
-L power:GND #PWR0112
-U 1 1 5FDFE871
-P 7040 2640
-F 0 "#PWR0112" H 7040 2390 50  0001 C CNN
-F 1 "GND" H 7045 2467 50  0000 C CNN
-F 2 "" H 7040 2640 50  0001 C CNN
-F 3 "" H 7040 2640 50  0001 C CNN
-	1    7040 2640
 	1    0    0    -1  
 $EndComp
 Text Label 3470 3790 0    50   ~ 0
@@ -732,189 +697,36 @@ F 3 "" H 11140 5680 50  0001 C CNN
 	1    11140 5680
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x02_Female J10
-U 1 1 5FF2A93D
-P 7240 1890
-F 0 "J10" H 7267 1866 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 7267 1775 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 7240 1890 50  0001 C CNN
-F 3 "~" H 7240 1890 50  0001 C CNN
-	1    7240 1890
-	1    0    0    -1  
-$EndComp
-Text Notes 6990 1740 0    50   ~ 10
+Text Notes 8910 1630 0    50   ~ 10
 To Baro2
-$Comp
-L power:+3.3V #PWR0115
-U 1 1 5FF2A945
-P 6790 1890
-F 0 "#PWR0115" H 6790 1740 50  0001 C CNN
-F 1 "+3.3V" H 6805 2063 50  0000 C CNN
-F 2 "" H 6790 1890 50  0001 C CNN
-F 3 "" H 6790 1890 50  0001 C CNN
-	1    6790 1890
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7040 1890 6790 1890
-$Comp
-L power:GND #PWR0116
-U 1 1 5FF2A94C
-P 7040 1990
-F 0 "#PWR0116" H 7040 1740 50  0001 C CNN
-F 1 "GND" H 7045 1817 50  0000 C CNN
-F 2 "" H 7040 1990 50  0001 C CNN
-F 3 "" H 7040 1990 50  0001 C CNN
-	1    7040 1990
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J9
-U 1 1 5FF3839A
-P 7240 1240
-F 0 "J9" H 7267 1216 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 7267 1125 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 7240 1240 50  0001 C CNN
-F 3 "~" H 7240 1240 50  0001 C CNN
-	1    7240 1240
-	1    0    0    -1  
-$EndComp
-Text Notes 6990 1090 0    50   ~ 10
+Text Notes 8910 980  0    50   ~ 10
 To Baro1
-$Comp
-L power:+3.3V #PWR0117
-U 1 1 5FF383A2
-P 6790 1240
-F 0 "#PWR0117" H 6790 1090 50  0001 C CNN
-F 1 "+3.3V" H 6805 1413 50  0000 C CNN
-F 2 "" H 6790 1240 50  0001 C CNN
-F 3 "" H 6790 1240 50  0001 C CNN
-	1    6790 1240
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7040 1240 6790 1240
-$Comp
-L power:GND #PWR0118
-U 1 1 5FF383A9
-P 7040 1340
-F 0 "#PWR0118" H 7040 1090 50  0001 C CNN
-F 1 "GND" H 7045 1167 50  0000 C CNN
-F 2 "" H 7040 1340 50  0001 C CNN
-F 3 "" H 7040 1340 50  0001 C CNN
-	1    7040 1340
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J13
-U 1 1 5FF45D5C
-P 8590 2390
-F 0 "J13" H 8617 2366 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 8617 2275 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 8590 2390 50  0001 C CNN
-F 3 "~" H 8590 2390 50  0001 C CNN
-	1    8590 2390
-	1    0    0    -1  
-$EndComp
-Text Notes 8340 2240 0    50   ~ 10
+Text Notes 8400 1670 0    50   ~ 10
 To IMU
-$Comp
-L power:+3.3V #PWR0119
-U 1 1 5FF45D64
-P 8140 2390
-F 0 "#PWR0119" H 8140 2240 50  0001 C CNN
-F 1 "+3.3V" H 8155 2563 50  0000 C CNN
-F 2 "" H 8140 2390 50  0001 C CNN
-F 3 "" H 8140 2390 50  0001 C CNN
-	1    8140 2390
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8390 2390 8140 2390
-$Comp
-L power:GND #PWR0120
-U 1 1 5FF45D6B
-P 8390 2490
-F 0 "#PWR0120" H 8390 2240 50  0001 C CNN
-F 1 "GND" H 8395 2317 50  0000 C CNN
-F 2 "" H 8390 2490 50  0001 C CNN
-F 3 "" H 8390 2490 50  0001 C CNN
-	1    8390 2490
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J12
-U 1 1 5FF45D71
-P 8590 1740
-F 0 "J12" H 8617 1716 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 8617 1625 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 8590 1740 50  0001 C CNN
-F 3 "~" H 8590 1740 50  0001 C CNN
-	1    8590 1740
-	1    0    0    -1  
-$EndComp
-Text Notes 8340 1590 0    50   ~ 10
+Text Notes 8400 1020 0    50   ~ 10
 To GPS
-$Comp
-L power:+3.3V #PWR0121
-U 1 1 5FF45D79
-P 8140 1740
-F 0 "#PWR0121" H 8140 1590 50  0001 C CNN
-F 1 "+3.3V" H 8155 1913 50  0000 C CNN
-F 2 "" H 8140 1740 50  0001 C CNN
-F 3 "" H 8140 1740 50  0001 C CNN
-	1    8140 1740
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8390 1740 8140 1740
-$Comp
-L power:GND #PWR0122
-U 1 1 5FF45D80
-P 8390 1840
-F 0 "#PWR0122" H 8390 1590 50  0001 C CNN
-F 1 "GND" H 8395 1667 50  0000 C CNN
-F 2 "" H 8390 1840 50  0001 C CNN
-F 3 "" H 8390 1840 50  0001 C CNN
-	1    8390 1840
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x02_Female J14
-U 1 1 5FF539A0
-P 8590 3040
-F 0 "J14" H 8617 3016 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 8617 2925 50  0000 L CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_1x02_P1.00mm_Vertical" H 8590 3040 50  0001 C CNN
-F 3 "~" H 8590 3040 50  0001 C CNN
-	1    8590 3040
-	1    0    0    -1  
-$EndComp
-Text Notes 8340 2890 0    50   ~ 10
+Text Notes 8400 2320 0    50   ~ 10
 To Radio
 $Comp
 L power:+3.3V #PWR0123
 U 1 1 5FF539A8
-P 8140 3040
-F 0 "#PWR0123" H 8140 2890 50  0001 C CNN
-F 1 "+3.3V" H 8155 3213 50  0000 C CNN
-F 2 "" H 8140 3040 50  0001 C CNN
-F 3 "" H 8140 3040 50  0001 C CNN
-	1    8140 3040
+P 7790 1500
+F 0 "#PWR0123" H 7790 1350 50  0001 C CNN
+F 1 "+3.3V" H 7805 1673 50  0000 C CNN
+F 2 "" H 7790 1500 50  0001 C CNN
+F 3 "" H 7790 1500 50  0001 C CNN
+	1    7790 1500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8390 3040 8140 3040
 $Comp
 L power:GND #PWR0124
 U 1 1 5FF539AF
-P 8390 3140
-F 0 "#PWR0124" H 8390 2890 50  0001 C CNN
-F 1 "GND" H 8395 2967 50  0000 C CNN
-F 2 "" H 8390 3140 50  0001 C CNN
-F 3 "" H 8390 3140 50  0001 C CNN
-	1    8390 3140
+P 7620 1510
+F 0 "#PWR0124" H 7620 1260 50  0001 C CNN
+F 1 "GND" H 7625 1337 50  0000 C CNN
+F 2 "" H 7620 1510 50  0001 C CNN
+F 3 "" H 7620 1510 50  0001 C CNN
+	1    7620 1510
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1988,4 +1800,63 @@ Wire Notes Line
 	11930 6180 11930 4790
 Wire Notes Line
 	11930 4790 15210 4790
+NoConn ~ 3470 2590
+$Comp
+L rocketry:MM_F_RA_08 J?
+U 1 1 5FFE5720
+P 7180 1810
+F 0 "J?" H 7236 2357 60  0000 C CNN
+F 1 "MM_F_RA_08" H 7236 2251 60  0000 C CNN
+F 2 "footprints:micromatch_female_ra_8" H 7080 2110 60  0001 C CNN
+F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F338070%7FG1%7Fpdf%7FEnglish%7FENG_CD_338070_G1.pdf%7F338070-8" H 7180 2210 60  0001 C CNN
+F 4 "TE" H 7280 3210 60  0001 C CNN "MFN"
+F 5 "338070-8" H 7380 3310 60  0001 C CNN "MPN"
+F 6 "http://www.te.com/usa-en/product-338070-8.html" H 7280 2310 60  0001 C CNN "PurchasingLink"
+	1    7180 1810
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7430 1610 7790 1610
+Wire Wire Line
+	7430 1710 7790 1710
+Wire Wire Line
+	7790 1710 7790 1610
+Connection ~ 7790 1610
+Wire Wire Line
+	7430 1810 7790 1810
+Wire Wire Line
+	7790 1810 7790 1710
+Connection ~ 7790 1710
+Wire Wire Line
+	7430 1910 7790 1910
+Wire Wire Line
+	7790 1910 7790 1810
+Connection ~ 7790 1810
+Wire Wire Line
+	7430 2010 7790 2010
+Wire Wire Line
+	7790 2010 7790 1910
+Connection ~ 7790 1910
+Wire Wire Line
+	7790 1500 7790 1610
+Wire Wire Line
+	7430 2110 7790 2110
+Wire Wire Line
+	7790 2110 7790 2010
+Connection ~ 7790 2010
+Wire Wire Line
+	7430 1510 7620 1510
+$Comp
+L power:GND #PWR?
+U 1 1 6003CE0A
+P 7630 2210
+F 0 "#PWR?" H 7630 1960 50  0001 C CNN
+F 1 "GND" H 7635 2037 50  0000 C CNN
+F 2 "" H 7630 2210 50  0001 C CNN
+F 3 "" H 7630 2210 50  0001 C CNN
+	1    7630 2210
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7430 2210 7630 2210
 $EndSCHEMATC
