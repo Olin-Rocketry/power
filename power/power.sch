@@ -212,7 +212,7 @@ U 1 1 5E17AB1F
 P 7990 5560
 F 0 "U2" H 7990 6038 50  0000 C CNN
 F 1 "TPS2592xx" H 7990 5947 50  0000 C CNN
-F 2 "Package_SON:VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias" H 7940 4910 50  0001 C CNN
+F 2 "footprints:VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias" H 7940 4910 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps25925.pdf" H 7590 5960 50  0001 C CNN
 	1    7990 5560
 	1    0    0    -1  
@@ -581,7 +581,7 @@ F 12 "Active" H 10890 6780 60  0001 L CNN "Status"
 	1    10690 5580
 	1    0    0    -1  
 $EndComp
-Text Notes 8910 2280 0    50   ~ 10
+Text Notes 8340 1540 0    50   ~ 10
 To Teensy
 Text Notes 7240 5060 0    50   ~ 0
 12.3V \n4A\n----->
@@ -697,36 +697,25 @@ F 3 "" H 11140 5680 50  0001 C CNN
 	1    11140 5680
 	1    0    0    -1  
 $EndComp
-Text Notes 8910 1630 0    50   ~ 10
+Text Notes 8340 1850 0    50   ~ 10
 To Baro2
-Text Notes 8910 980  0    50   ~ 10
+Text Notes 8340 1750 0    50   ~ 10
 To Baro1
-Text Notes 8400 1670 0    50   ~ 10
+Text Notes 8340 1950 0    50   ~ 10
 To IMU
-Text Notes 8400 1020 0    50   ~ 10
+Text Notes 8340 1650 0    50   ~ 10
 To GPS
-Text Notes 8400 2320 0    50   ~ 10
+Text Notes 8340 2040 0    50   ~ 10
 To Radio
 $Comp
 L power:+3.3V #PWR0123
 U 1 1 5FF539A8
-P 7790 1500
-F 0 "#PWR0123" H 7790 1350 50  0001 C CNN
-F 1 "+3.3V" H 7805 1673 50  0000 C CNN
-F 2 "" H 7790 1500 50  0001 C CNN
-F 3 "" H 7790 1500 50  0001 C CNN
-	1    7790 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0124
-U 1 1 5FF539AF
-P 7620 1510
-F 0 "#PWR0124" H 7620 1260 50  0001 C CNN
-F 1 "GND" H 7625 1337 50  0000 C CNN
-F 2 "" H 7620 1510 50  0001 C CNN
-F 3 "" H 7620 1510 50  0001 C CNN
-	1    7620 1510
+P 8270 1500
+F 0 "#PWR0123" H 8270 1350 50  0001 C CNN
+F 1 "+3.3V" H 8285 1673 50  0000 C CNN
+F 2 "" H 8270 1500 50  0001 C CNN
+F 3 "" H 8270 1500 50  0001 C CNN
+	1    8270 1500
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -1153,7 +1142,7 @@ U 1 1 5FF800A6
 P 5390 3140
 F 0 "J1" H 5417 3116 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 5417 3025 50  0000 L CNN
-F 2 "footprints:nickel_pad_bms" H 5390 3140 50  0001 C CNN
+F 2 "footprints:nickle_pads_1x2" H 5390 3140 50  0001 C CNN
 F 3 "~" H 5390 3140 50  0001 C CNN
 	1    5390 3140
 	1    0    0    -1  
@@ -1166,7 +1155,7 @@ U 1 1 5FF805ED
 P 5400 3390
 F 0 "J3" H 5427 3366 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 5427 3275 50  0000 L CNN
-F 2 "footprints:nickel_pad_bms" H 5400 3390 50  0001 C CNN
+F 2 "footprints:nickle_pads_1x2" H 5400 3390 50  0001 C CNN
 F 3 "~" H 5400 3390 50  0001 C CNN
 	1    5400 3390
 	1    0    0    -1  
@@ -1177,7 +1166,7 @@ U 1 1 5FF89EE4
 P 5400 3630
 F 0 "J4" H 5427 3606 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 5427 3515 50  0000 L CNN
-F 2 "footprints:nickel_pad_bms" H 5400 3630 50  0001 C CNN
+F 2 "footprints:nickle_pads_1x2" H 5400 3630 50  0001 C CNN
 F 3 "~" H 5400 3630 50  0001 C CNN
 	1    5400 3630
 	1    0    0    -1  
@@ -1188,7 +1177,7 @@ U 1 1 5FF8A5BC
 P 6250 3160
 F 0 "J6" H 6277 3136 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 6277 3045 50  0000 L CNN
-F 2 "footprints:nickel_pad_bms" H 6250 3160 50  0001 C CNN
+F 2 "footprints:nickle_pads_1x2" H 6250 3160 50  0001 C CNN
 F 3 "~" H 6250 3160 50  0001 C CNN
 	1    6250 3160
 	1    0    0    -1  
@@ -1199,7 +1188,7 @@ U 1 1 5FF94101
 P 6260 3400
 F 0 "J7" H 6287 3376 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 6287 3285 50  0000 L CNN
-F 2 "footprints:nickel_pad_bms" H 6260 3400 50  0001 C CNN
+F 2 "footprints:nickle_pads_1x2" H 6260 3400 50  0001 C CNN
 F 3 "~" H 6260 3400 50  0001 C CNN
 	1    6260 3400
 	1    0    0    -1  
@@ -1210,7 +1199,7 @@ U 1 1 5FF9440E
 P 6260 3640
 F 0 "J8" H 6287 3616 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 6287 3525 50  0000 L CNN
-F 2 "footprints:nickel_pad_bms" H 6260 3640 50  0001 C CNN
+F 2 "footprints:nickle_pads_1x2" H 6260 3640 50  0001 C CNN
 F 3 "~" H 6260 3640 50  0001 C CNN
 	1    6260 3640
 	1    0    0    -1  
@@ -1802,61 +1791,66 @@ Wire Notes Line
 	11930 4790 15210 4790
 NoConn ~ 3470 2590
 $Comp
-L rocketry:MM_F_RA_08 J?
+L rocketry:MM_F_RA_08 J9
 U 1 1 5FFE5720
-P 7180 1810
-F 0 "J?" H 7236 2357 60  0000 C CNN
-F 1 "MM_F_RA_08" H 7236 2251 60  0000 C CNN
-F 2 "footprints:micromatch_female_ra_8" H 7080 2110 60  0001 C CNN
-F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F338070%7FG1%7Fpdf%7FEnglish%7FENG_CD_338070_G1.pdf%7F338070-8" H 7180 2210 60  0001 C CNN
-F 4 "TE" H 7280 3210 60  0001 C CNN "MFN"
-F 5 "338070-8" H 7380 3310 60  0001 C CNN "MPN"
-F 6 "http://www.te.com/usa-en/product-338070-8.html" H 7280 2310 60  0001 C CNN "PurchasingLink"
-	1    7180 1810
+P 7660 1810
+F 0 "J9" H 7716 2357 60  0000 C CNN
+F 1 "MM_F_RA_08" H 7716 2251 60  0000 C CNN
+F 2 "footprints:micromatch_female_ra_8" H 7560 2110 60  0001 C CNN
+F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F338070%7FG1%7Fpdf%7FEnglish%7FENG_CD_338070_G1.pdf%7F338070-8" H 7660 2210 60  0001 C CNN
+F 4 "TE" H 7760 3210 60  0001 C CNN "MFN"
+F 5 "338070-8" H 7860 3310 60  0001 C CNN "MPN"
+F 6 "http://www.te.com/usa-en/product-338070-8.html" H 7760 2310 60  0001 C CNN "PurchasingLink"
+	1    7660 1810
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7430 1610 7790 1610
+	7910 1610 8270 1610
 Wire Wire Line
-	7430 1710 7790 1710
+	7910 1710 8270 1710
 Wire Wire Line
-	7790 1710 7790 1610
-Connection ~ 7790 1610
+	8270 1710 8270 1610
+Connection ~ 8270 1610
 Wire Wire Line
-	7430 1810 7790 1810
+	7910 1810 8270 1810
 Wire Wire Line
-	7790 1810 7790 1710
-Connection ~ 7790 1710
+	8270 1810 8270 1710
+Connection ~ 8270 1710
 Wire Wire Line
-	7430 1910 7790 1910
+	7910 1910 8270 1910
 Wire Wire Line
-	7790 1910 7790 1810
-Connection ~ 7790 1810
+	8270 1910 8270 1810
+Connection ~ 8270 1810
 Wire Wire Line
-	7430 2010 7790 2010
+	7910 2010 8270 2010
 Wire Wire Line
-	7790 2010 7790 1910
-Connection ~ 7790 1910
+	8270 2010 8270 1910
+Connection ~ 8270 1910
 Wire Wire Line
-	7790 1500 7790 1610
+	8270 1500 8270 1510
 Wire Wire Line
-	7430 2110 7790 2110
+	7910 2110 8270 2110
 Wire Wire Line
-	7790 2110 7790 2010
-Connection ~ 7790 2010
+	8270 2110 8270 2010
+Connection ~ 8270 2010
 Wire Wire Line
-	7430 1510 7620 1510
+	7910 1510 8270 1510
+Connection ~ 8270 1510
+Wire Wire Line
+	8270 1510 8270 1610
+Wire Wire Line
+	7910 2210 8270 2210
 $Comp
-L power:GND #PWR?
-U 1 1 6003CE0A
-P 7630 2210
-F 0 "#PWR?" H 7630 1960 50  0001 C CNN
-F 1 "GND" H 7635 2037 50  0000 C CNN
-F 2 "" H 7630 2210 50  0001 C CNN
-F 3 "" H 7630 2210 50  0001 C CNN
-	1    7630 2210
+L power:GND #PWR0111
+U 1 1 6006DD5A
+P 8270 2210
+F 0 "#PWR0111" H 8270 1960 50  0001 C CNN
+F 1 "GND" H 8275 2037 50  0000 C CNN
+F 2 "" H 8270 2210 50  0001 C CNN
+F 3 "" H 8270 2210 50  0001 C CNN
+	1    8270 2210
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7430 2210 7630 2210
+Text Notes 7520 1080 0    50   ~ 10
+Power Output to Main Flight Computer
 $EndSCHEMATC
