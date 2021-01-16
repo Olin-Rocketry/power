@@ -19,6 +19,138 @@ X ~ 2 100 -300 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
+# ATMEGA16M1-formula
+#
+DEF ATMEGA16M1-formula U 0 40 Y Y 1 F N
+F0 "U" -950 1830 50 H V L BNN
+F1 "ATMEGA16M1-formula" 500 -1400 50 H V L BNN
+F2 "footprints:TQFP-32_7x7mm_Pitch0.8mm" 0 0 50 H I C CIN
+F3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8209-8-bit%20AVR%20ATmega16M1-32M1-64M1_Datasheet.pdf" -950 1830 50 H I C CNN
+F4 "DK" 0 0 60 H I C CNN "MFN"
+F5 "ATMEGA16M1-AU-ND" 0 0 60 H I C CNN "MPN"
+F6 "https://www.digikey.com/product-detail/en/atmel/ATMEGA16M1-AU/ATMEGA16M1-AU-ND/2271208" -550 2230 60 H I C CNN "PurchasingLink"
+$FPLIST
+ TQFP*32*7x7mm*
+$ENDFPLIST
+DRAW
+S -950 1800 950 -1300 0 1 10 f
+X (PCINT18/PSCIN2/OC1A/MISO_A)PD2 1 1100 -300 150 L 40 40 1 1 B
+X (PCINT25/OC0B/XTAL1)PE1 10 1100 -1100 150 L 40 40 1 1 B
+X (PCINT26/ADC0/XTAL2)PE2 11 1100 -1200 150 L 40 40 1 1 B
+X (PCINT20/ADC1/RXD/RXLIN/ICP1A/SCK_A)PD4 12 1100 -500 150 L 40 40 1 1 B
+X (PCINT21/ADC2/ACMP2)PD5 13 1100 -600 150 L 40 40 1 1 B
+X (PCINT22/ADC3/INT0/ACMPN2)PD6 14 1100 -700 150 L 40 40 1 1 B
+X (PCINT23/ACMP0)PD7 15 1100 -800 150 L 40 40 1 1 B
+X (PCINT2/ADC5/INT1/ACMPN0)PB2 16 1100 1500 150 L 40 40 1 1 B
+X (PCINT12/ADC8/ACMPN3/AMP1-)PC4 17 1100 400 150 L 40 40 1 1 B
+X (PCINT13/ADC9/ACMP3/AMP1+)PC5 18 1100 300 150 L 40 40 1 1 B
+X AVCC 19 -1100 1400 150 R 40 40 1 1 W
+X (PCINT19/TXD/TXLIN/OC0A/~SS~/MOSI_A)PD3 2 1100 -400 150 L 40 40 1 1 B
+X AGND 20 -1100 -800 150 R 40 40 1 1 W
+X AREF(ISRC) 21 -1100 1000 150 R 40 40 1 1 W
+X (PCINT14/ADC10/ACMP1)PC6 22 1100 200 150 L 40 40 1 1 B
+X (PCINT3/AMP0-)PB3 23 1100 1400 150 L 40 40 1 1 B
+X (PCINT4/AMP0+)PB4 24 1100 1300 150 L 40 40 1 1 B
+X (PCINT15/D2A/AMP2+)PC7 25 1100 100 150 L 40 40 1 1 B
+X (PCINT5/ADC6/INT2/ACMPN1/AMP2-)PB5 26 1100 1200 150 L 40 40 1 1 B
+X (PCINT6/ADC7/PSCOUT1B)PB6 27 1100 1100 150 L 40 40 1 1 B
+X (PCINT7/ADC4/SCK/PSCOUT0B)PB7 28 1100 1000 150 L 40 40 1 1 B
+X (PCINT16/PSCOUT0A)PD0 29 1100 -100 150 L 40 40 1 1 B
+X (PCINT9/PSCIN1/OC1B/~SS_A~)PC1 3 1100 700 150 L 40 40 1 1 B
+X (PCINT8/INT3/PSCOUT1A)PC0 30 1100 800 150 L 40 40 1 1 B
+X (PCINT24/OCD/~RESET~)PE0 31 1100 -1000 150 L 40 40 1 1 B
+X (PCINT17/CLKO/PSCIN0)PD1 32 1100 -200 150 L 40 40 1 1 B
+X VCC 4 -1100 1700 150 R 40 40 1 1 W
+X GND 5 -1100 -1200 150 R 40 40 1 1 W
+X (PCINT10/T0/TXCAN)PC2 6 1100 600 150 L 40 40 1 1 B
+X (PCINT11/T1/ICP1B/RXCAN)PC3 7 1100 500 150 L 40 40 1 1 B
+X (PCINT0/MISO/PSCOUT2A)PB0 8 1100 1700 150 L 40 40 1 1 B
+X (PCINT1/MOSI/PSCOUT2B)PB1 9 1100 1600 150 L 40 40 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Barrel_jack-formula
+#
+DEF Barrel_jack-formula J 0 0 Y N 1 F N
+F0 "J" 0 0 50 H V C CNN
+F1 "Barrel_jack-formula" 0 0 50 H V C CNN
+F2 "footprints:barrel_jack_PJ-037A" -100 -100 50 H I C CNN
+F3 "https://www.cui.com/product/resource/pj-037a.pdf" 0 0 50 H I C CNN
+F4 "DK" 100 100 50 H I C CNN "MFN"
+F5 "CP-037A-ND" 200 200 50 H I C CNN "MPN"
+F6 "https://www.digikey.com/product-detail/en/cui-inc/PJ-037A/CP-037A-ND/1644545" 300 300 50 H I C CNN "PurchasingLink"
+DRAW
+A -150 -200 25 901 -901 0 1 0 N -150 -175 -150 -225
+S 50 -150 100 -250 0 1 0 N
+P 2 0 1 0 50 -225 -150 -225 N
+P 2 0 1 0 50 -175 -150 -175 N
+P 4 0 1 0 0 -350 -25 -350 -50 -325 -75 -350 N
+X center 1 200 -200 100 L 50 50 1 1 w
+X Shell 2 200 -350 200 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
+# CONN_02X03-formula
+#
+DEF CONN_02X03-formula J 0 1 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "CONN_02X03-formula" 0 -200 50 H V C CNN
+F2 "footprints:Pin_Header_Straight_2x03" 0 -1200 50 H I C CNN
+F3 "http://portal.fciconnect.com/Comergent//fci/drawing/67996.pdf" 0 -1200 50 H I C CNN
+F4 "DK" 0 0 60 H I C CNN "MFN"
+F5 "609-3234-ND" 0 0 60 H I C CNN "MPN"
+F6 "https://www.digikey.com/product-detail/en/amphenol-fci/67997-206HLF/609-3234-ND/1878491" 400 600 60 H I C CNN "PurchasingLink"
+$FPLIST
+ Pin_Header_Straight_2X03
+ Pin_Header_Angled_2X03
+ Socket_Strip_Straight_2X03
+ Socket_Strip_Angled_2X03
+$ENDFPLIST
+DRAW
+S -100 -95 -50 -105 0 1 0 N
+S -100 5 -50 -5 0 1 0 N
+S -100 105 -50 95 0 1 0 N
+S -100 150 100 -150 0 1 0 N
+S 50 -95 100 -105 0 1 0 N
+S 50 5 100 -5 0 1 0 N
+S 50 105 100 95 0 1 0 N
+X P1 1 -250 100 150 R 50 50 1 1 P
+X P2 2 250 100 150 L 50 50 1 1 P
+X P3 3 -250 0 150 R 50 50 1 1 P
+X P4 4 250 0 150 L 50 50 1 1 P
+X P5 5 -250 -100 150 R 50 50 1 1 P
+X P6 6 250 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# D_Zener_13V-formula
+#
+DEF D_Zener_13V-formula D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "D_Zener_13V-formula" 0 -100 50 H V C CNN
+F2 "footprints:D_13V_Zener" -100 0 50 H I C CNN
+F3 "http://www.onsemi.com/pub/Collateral/1SMB5913BT3-D.PDF" 0 100 50 H I C CNN
+F4 "DK" 200 300 60 H I C CNN "MFN"
+F5 "1SMB5928BT3GOSCT-ND" 100 200 60 H I C CNN "MPN"
+F6 "https://www.digikey.com/product-detail/en/1SMB5928BT3G/1SMB5928BT3GOSCT-ND/917730?WT.z_cid=ref_octopart_dkc_buynow&site=us" 400 500 60 H I C CNN "PurchasingLink"
+$FPLIST
+ TO-???*
+ *SingleDiode
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -100 -50 N
+P 2 0 1 8 -50 50 0 50 N
+P 2 0 1 0 50 0 -50 0 N
+P 3 0 1 8 -50 -50 -50 50 -30 50 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # LED_0805-Rocketry-solenoidTrigger-rescue
 #
 DEF LED_0805-Rocketry-solenoidTrigger-rescue D 0 40 N N 1 F N
@@ -40,6 +172,80 @@ P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
 P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# LED_0805_Amber-formula
+#
+DEF LED_0805_Amber-formula D 0 40 N N 1 F N
+F0 "D" 0 -100 50 H V C CNN
+F1 "LED_0805_Amber-formula" 0 100 50 H V C CNN
+F2 "footprints:LED_0805_OEM" -100 0 50 H I C CNN
+F3 "https://media.digikey.com/pdf/Data%20Sheets/Chicago%20Miniature%20Lamps%20PDFs/CMDA5_Series_Rev_Aug_2014.pdf" 0 100 50 H I C CNN
+F4 "DK" 0 0 60 H I C CNN "MFN"
+F5 "L71517CT-ND" 0 0 60 H I C CNN "MPN"
+F6 "https://www.digikey.com/product-detail/en/visual-communications-company-vcc/CMDA5DY7D1S/L71517CT-ND/614867" 400 500 60 H I C CNN "PurchasingLink"
+$FPLIST
+ LED*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# LED_0805_Red-formula
+#
+DEF LED_0805_Red-formula D 0 40 N N 1 F N
+F0 "D" 0 -100 50 H V C CNN
+F1 "LED_0805_Red-formula" 0 100 50 H V C CNN
+F2 "footprints:LED_0805_OEM" -100 0 50 H I C CNN
+F3 "http://www.osram-os.com/Graphics/XPic8/00078869_0.pdf" 0 100 50 H I C CNN
+F4 "DK" 0 0 60 H I C CNN "MFN"
+F5 "475-1415-1-ND" 0 0 60 H I C CNN "MPN"
+F6 "https://www.digikey.com/product-detail/en/osram-opto-semiconductors-inc/LH-R974-LP-1/475-1415-1-ND/1802604" 400 500 60 H I C CNN "PurchasingLink"
+$FPLIST
+ LED*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# LP5907MFX-3_3_NOPB-dk_PMIC-Voltage-Regulators-Linear
+#
+DEF LP5907MFX-3_3_NOPB-dk_PMIC-Voltage-Regulators-Linear U 0 20 Y Y 1 F N
+F0 "U" 0 350 60 H V C CNN
+F1 "LP5907MFX-3_3_NOPB-dk_PMIC-Voltage-Regulators-Linear" 0 450 60 H V C CNN
+F2 "digikey-footprints:SOT-753" 200 200 60 H I L CNN
+F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flp5907" 200 300 60 H I L CNN
+F4 "296-38557-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "LP5907MFX-3.3/NOPB" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "PMIC - Voltage Regulators - Linear" 200 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flp5907" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/texas-instruments/LP5907MFX-3.3-NOPB/296-38557-1-ND/5034443" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC REG LINEAR 3.3V 250MA SOT23-5" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -200 300 200 0 0 1 0 f
+X IN 1 -300 200 100 R 50 50 1 1 W
+X GND 2 0 -100 100 U 50 50 1 1 W
+X EN 3 -300 100 100 R 50 50 1 1 I
+X NC 4 300 100 100 L 50 50 1 1 N
+X OUT 5 300 200 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
