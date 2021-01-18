@@ -212,7 +212,7 @@ U 1 1 5E17AB1F
 P 7990 5560
 F 0 "U2" H 7990 6038 50  0000 C CNN
 F 1 "TPS2592xx" H 7990 5947 50  0000 C CNN
-F 2 "Package_SON:VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias" H 7940 4910 50  0001 C CNN
+F 2 "footprints:VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm_ThermalVias" H 7940 4910 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps25925.pdf" H 7590 5960 50  0001 C CNN
 	1    7990 5560
 	1    0    0    -1  

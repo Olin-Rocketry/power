@@ -200,37 +200,29 @@ X S 3 100 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# dk_PMIC-Voltage-Regulators-Linear_LP5907MFX-3_3_NOPB
+# power-rescue_01530008Z-Rocketry-solenoidTrigger-rescue
 #
-DEF dk_PMIC-Voltage-Regulators-Linear_LP5907MFX-3_3_NOPB U 0 20 Y Y 1 F N
-F0 "U" 0 350 60 H V C CNN
-F1 "dk_PMIC-Voltage-Regulators-Linear_LP5907MFX-3_3_NOPB" 0 450 60 H V C CNN
-F2 "digikey-footprints:SOT-753" 200 200 60 H I L CNN
-F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flp5907" 200 300 60 H I L CNN
-F4 "296-38557-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "LP5907MFX-3.3/NOPB" 200 500 60 H I L CNN "MPN"
-F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
-F7 "PMIC - Voltage Regulators - Linear" 200 700 60 H I L CNN "Family"
-F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flp5907" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/texas-instruments/LP5907MFX-3.3-NOPB/296-38557-1-ND/5034443" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "IC REG LINEAR 3.3V 250MA SOT23-5" 200 1000 60 H I L CNN "Description"
-F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
+DEF power-rescue_01530008Z-Rocketry-solenoidTrigger-rescue F 0 40 Y Y 1 F N
+F0 "F" -50 -200 50 H V C CNN
+F1 "power-rescue_01530008Z-Rocketry-solenoidTrigger-rescue" 100 0 50 H V C CNN
+F2 "footprints:01530008Z" -50 -200 50 H I C CNN
+F3 "" -50 -200 50 H I C CNN
+F4 "01530008Z" 100 0 50 H I C CNN "MPN"
+F5 "F065-ND" 100 0 50 H I C CNN "DPN"
+F6 "https://www.digikey.com/product-detail/en/littelfuse-inc/01530008Z/F065-ND/183334" 100 0 50 H I C CNN "Purchasing Link"
+F7 "This is just a fuse reciprocal, the fuse it will hold is 0297010.WXNV (https://www.digikey.com/product-detail/en/littelfuse-inc/0297010.WXNV/F991-ND/146591)" 100 0 50 H I C CNN "Notes"
 DRAW
-S -200 300 200 0 0 1 0 f
-X IN 1 -300 200 100 R 50 50 1 1 W
-X GND 2 0 -100 100 U 50 50 1 1 W
-X EN 3 -300 100 100 R 50 50 1 1 I
-X NC 4 300 100 100 L 50 50 1 1 N
-X OUT 5 300 200 100 L 50 50 1 1 w
+S -100 -150 0 -350 0 1 0 f
+X ~ 1 100 -200 100 L 50 50 1 1 B
+X ~ 2 100 -300 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# formula_ATMEGA16M1
+# power-rescue_ATMEGA16M1-formula
 #
-DEF formula_ATMEGA16M1 U 0 40 Y Y 1 F N
+DEF power-rescue_ATMEGA16M1-formula U 0 40 Y Y 1 F N
 F0 "U" -950 1830 50 H V L BNN
-F1 "formula_ATMEGA16M1" 500 -1400 50 H V L BNN
+F1 "power-rescue_ATMEGA16M1-formula" 500 -1400 50 H V L BNN
 F2 "footprints:TQFP-32_7x7mm_Pitch0.8mm" 0 0 50 H I C CIN
 F3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8209-8-bit%20AVR%20ATmega16M1-32M1-64M1_Datasheet.pdf" -950 1830 50 H I C CNN
 F4 "DK" 0 0 60 H I C CNN "MFN"
@@ -276,11 +268,11 @@ X (PCINT1/MOSI/PSCOUT2B)PB1 9 1100 1600 150 L 40 40 1 1 B
 ENDDRAW
 ENDDEF
 #
-# formula_Barrel_jack
+# power-rescue_Barrel_jack-formula
 #
-DEF formula_Barrel_jack J 0 0 Y N 1 F N
+DEF power-rescue_Barrel_jack-formula J 0 0 Y N 1 F N
 F0 "J" 0 0 50 H V C CNN
-F1 "formula_Barrel_jack" 0 0 50 H V C CNN
+F1 "power-rescue_Barrel_jack-formula" 0 0 50 H V C CNN
 F2 "footprints:barrel_jack_PJ-037A" -100 -100 50 H I C CNN
 F3 "https://www.cui.com/product/resource/pj-037a.pdf" 0 0 50 H I C CNN
 F4 "DK" 100 100 50 H I C CNN "MFN"
@@ -297,11 +289,11 @@ X Shell 2 200 -350 200 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# formula_CONN_02X03
+# power-rescue_CONN_02X03-formula
 #
-DEF formula_CONN_02X03 J 0 1 Y N 1 F N
+DEF power-rescue_CONN_02X03-formula J 0 1 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "formula_CONN_02X03" 0 -200 50 H V C CNN
+F1 "power-rescue_CONN_02X03-formula" 0 -200 50 H V C CNN
 F2 "footprints:Pin_Header_Straight_2x03" 0 -1200 50 H I C CNN
 F3 "http://portal.fciconnect.com/Comergent//fci/drawing/67996.pdf" 0 -1200 50 H I C CNN
 F4 "DK" 0 0 60 H I C CNN "MFN"
@@ -330,11 +322,11 @@ X P6 6 250 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# formula_D_Zener_13V
+# power-rescue_D_Zener_13V-formula
 #
-DEF formula_D_Zener_13V D 0 40 N N 1 F N
+DEF power-rescue_D_Zener_13V-formula D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "formula_D_Zener_13V" 0 -100 50 H V C CNN
+F1 "power-rescue_D_Zener_13V-formula" 0 -100 50 H V C CNN
 F2 "footprints:D_13V_Zener" -100 0 50 H I C CNN
 F3 "http://www.onsemi.com/pub/Collateral/1SMB5913BT3-D.PDF" 0 100 50 H I C CNN
 F4 "DK" 200 300 60 H I C CNN "MFN"
@@ -355,72 +347,6 @@ P 3 0 1 8 -50 -50 -50 50 -30 50 N
 P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# formula_LED_0805_Amber
-#
-DEF formula_LED_0805_Amber D 0 40 N N 1 F N
-F0 "D" 0 -100 50 H V C CNN
-F1 "formula_LED_0805_Amber" 0 100 50 H V C CNN
-F2 "footprints:LED_0805_OEM" -100 0 50 H I C CNN
-F3 "https://media.digikey.com/pdf/Data%20Sheets/Chicago%20Miniature%20Lamps%20PDFs/CMDA5_Series_Rev_Aug_2014.pdf" 0 100 50 H I C CNN
-F4 "DK" 0 0 60 H I C CNN "MFN"
-F5 "L71517CT-ND" 0 0 60 H I C CNN "MPN"
-F6 "https://www.digikey.com/product-detail/en/visual-communications-company-vcc/CMDA5DY7D1S/L71517CT-ND/614867" 400 500 60 H I C CNN "PurchasingLink"
-$FPLIST
- LED*
-$ENDFPLIST
-DRAW
-P 2 0 1 8 -50 -50 -50 50 N
-P 2 0 1 0 -50 0 50 0 N
-P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
-P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
-P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# formula_LED_0805_Red
-#
-DEF formula_LED_0805_Red D 0 40 N N 1 F N
-F0 "D" 0 -100 50 H V C CNN
-F1 "formula_LED_0805_Red" 0 100 50 H V C CNN
-F2 "footprints:LED_0805_OEM" -100 0 50 H I C CNN
-F3 "http://www.osram-os.com/Graphics/XPic8/00078869_0.pdf" 0 100 50 H I C CNN
-F4 "DK" 0 0 60 H I C CNN "MFN"
-F5 "475-1415-1-ND" 0 0 60 H I C CNN "MPN"
-F6 "https://www.digikey.com/product-detail/en/osram-opto-semiconductors-inc/LH-R974-LP-1/475-1415-1-ND/1802604" 400 500 60 H I C CNN "PurchasingLink"
-$FPLIST
- LED*
-$ENDFPLIST
-DRAW
-P 2 0 1 8 -50 -50 -50 50 N
-P 2 0 1 0 -50 0 50 0 N
-P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
-P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
-P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# power-rescue_01530008Z-Rocketry-solenoidTrigger-rescue
-#
-DEF power-rescue_01530008Z-Rocketry-solenoidTrigger-rescue F 0 40 Y Y 1 F N
-F0 "F" -50 -200 50 H V C CNN
-F1 "power-rescue_01530008Z-Rocketry-solenoidTrigger-rescue" 100 0 50 H V C CNN
-F2 "footprints:01530008Z" -50 -200 50 H I C CNN
-F3 "" -50 -200 50 H I C CNN
-F4 "01530008Z" 100 0 50 H I C CNN "MPN"
-F5 "F065-ND" 100 0 50 H I C CNN "DPN"
-F6 "https://www.digikey.com/product-detail/en/littelfuse-inc/01530008Z/F065-ND/183334" 100 0 50 H I C CNN "Purchasing Link"
-F7 "This is just a fuse reciprocal, the fuse it will hold is 0297010.WXNV (https://www.digikey.com/product-detail/en/littelfuse-inc/0297010.WXNV/F991-ND/146591)" 100 0 50 H I C CNN "Notes"
-DRAW
-S -100 -150 0 -350 0 1 0 f
-X ~ 1 100 -200 100 L 50 50 1 1 B
-X ~ 2 100 -300 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
@@ -445,6 +371,80 @@ P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
 P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power-rescue_LED_0805_Amber-formula
+#
+DEF power-rescue_LED_0805_Amber-formula D 0 40 N N 1 F N
+F0 "D" 0 -100 50 H V C CNN
+F1 "power-rescue_LED_0805_Amber-formula" 0 100 50 H V C CNN
+F2 "footprints:LED_0805_OEM" -100 0 50 H I C CNN
+F3 "https://media.digikey.com/pdf/Data%20Sheets/Chicago%20Miniature%20Lamps%20PDFs/CMDA5_Series_Rev_Aug_2014.pdf" 0 100 50 H I C CNN
+F4 "DK" 0 0 60 H I C CNN "MFN"
+F5 "L71517CT-ND" 0 0 60 H I C CNN "MPN"
+F6 "https://www.digikey.com/product-detail/en/visual-communications-company-vcc/CMDA5DY7D1S/L71517CT-ND/614867" 400 500 60 H I C CNN "PurchasingLink"
+$FPLIST
+ LED*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power-rescue_LED_0805_Red-formula
+#
+DEF power-rescue_LED_0805_Red-formula D 0 40 N N 1 F N
+F0 "D" 0 -100 50 H V C CNN
+F1 "power-rescue_LED_0805_Red-formula" 0 100 50 H V C CNN
+F2 "footprints:LED_0805_OEM" -100 0 50 H I C CNN
+F3 "http://www.osram-os.com/Graphics/XPic8/00078869_0.pdf" 0 100 50 H I C CNN
+F4 "DK" 0 0 60 H I C CNN "MFN"
+F5 "475-1415-1-ND" 0 0 60 H I C CNN "MPN"
+F6 "https://www.digikey.com/product-detail/en/osram-opto-semiconductors-inc/LH-R974-LP-1/475-1415-1-ND/1802604" 400 500 60 H I C CNN "PurchasingLink"
+$FPLIST
+ LED*
+$ENDFPLIST
+DRAW
+P 2 0 1 8 -50 -50 -50 50 N
+P 2 0 1 0 -50 0 50 0 N
+P 4 0 1 8 50 -50 50 50 -50 0 50 -50 N
+P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# power-rescue_LP5907MFX-3_3_NOPB-dk_PMIC-Voltage-Regulators-Linear
+#
+DEF power-rescue_LP5907MFX-3_3_NOPB-dk_PMIC-Voltage-Regulators-Linear U 0 20 Y Y 1 F N
+F0 "U" 0 350 60 H V C CNN
+F1 "power-rescue_LP5907MFX-3_3_NOPB-dk_PMIC-Voltage-Regulators-Linear" 0 450 60 H V C CNN
+F2 "digikey-footprints:SOT-753" 200 200 60 H I L CNN
+F3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flp5907" 200 300 60 H I L CNN
+F4 "296-38557-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "LP5907MFX-3.3/NOPB" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "PMIC - Voltage Regulators - Linear" 200 700 60 H I L CNN "Family"
+F8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flp5907" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/texas-instruments/LP5907MFX-3.3-NOPB/296-38557-1-ND/5034443" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC REG LINEAR 3.3V 250MA SOT23-5" 200 1000 60 H I L CNN "Description"
+F11 "Texas Instruments" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -200 300 200 0 0 1 0 f
+X IN 1 -300 200 100 R 50 50 1 1 W
+X GND 2 0 -100 100 U 50 50 1 1 W
+X EN 3 -300 100 100 R 50 50 1 1 I
+X NC 4 300 100 100 L 50 50 1 1 N
+X OUT 5 300 200 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
