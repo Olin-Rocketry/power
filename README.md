@@ -3,11 +3,12 @@
 ## Current Design 
 **Two independent groups of 3 cells in series.** <br>
 **Nominal voltage: 12.3V**  <br>
-**Nominal current: 2500 mAh** <br>
+**Nominal current: 4000 mAh** <br>
 
 ### The 25R 18650 Li-ion Battery
 - Discharge rate: 2000 mA
 - Range of voltage: 3.6V (EoD) - 4.1V (EoC)
+- Current rating: 2500mAh
 - Max voltage (switch from CV to CC):  4.1V
 - Icc (charging current) = .25 A 
 - Max cycle life: 100 cycles  
@@ -19,6 +20,13 @@
 
 ## Power Distribution
 ![power distribution](./img/power_distribution.jpg)
+
+## Rev1 Schematic *1/2021
+![rev1_sch](./img/sch.jpg)
+
+## Rev1 PCB Layout and 3D Model *1/2021
+![rev1_layout](./img/layout.jpg)
+![rev1_3d](./img/3d.jpg)
 
 ### Subsystem loads 
 | Subsystem | Voltage | Current |
@@ -47,10 +55,8 @@
 
 ## Design Reviews 
 
-[Design Review 1](https://docs.google.com/presentation/d/1L4w887s7x08WpU703jKznQMGognrjYOtB8_F7KaSsSU/edit?usp=sharing): Initial design validation for cell balancing, charging, and discharging
+[Design Review 1](https://docs.google.com/presentation/d/1L4w887s7x08WpU703jKznQMGognrjYOtB8_F7KaSsSU/edit?usp=sharing): Initial design validation for cell balancing, charging, and discharging *12/2019
 
-Design Review 2: 10/2020
+[Design Review 2](https://docs.google.com/presentation/d/1s-o9i7a22b9S89c6PrSgXXXy9AWuLc9d6yVl3I3lAEo/edit#slide=id.gacddbe3730_0_0): Process design review touching on integration of ATMEGA, safety switches, and voltage distribution/regulation *12/2020
 
 ## Questions and Considerations 
-
-Dre'Vonne
