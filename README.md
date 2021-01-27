@@ -22,11 +22,11 @@
 ![power distribution](./img/power_distribution.jpg)
 
 ## Rev1 Schematic *1/2021
-![rev1_sch](./img/sch.jpg)
+![rev1_sch](./img/sch.png)
 
 ## Rev1 PCB Layout and 3D Model *1/2021
-![rev1_layout](./img/layout.jpg)
-![rev1_3d](./img/3d.jpg)
+![rev1_layout](./img/layoutf.png) ![rev1_layoutb](./img/layoutb.png)
+![rev1_3d](./img/3d.png)
 
 ### Subsystem loads 
 | Subsystem | Voltage | Current |
