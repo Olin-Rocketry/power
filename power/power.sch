@@ -185,17 +185,6 @@ B3A-
 Text Label 1840 6110 0    50   ~ 0
 B2A+
 $Comp
-L Device:D_Shockley D1
-U 1 1 5E17A7E8
-P 1190 5110
-F 0 "D1" H 1190 4894 50  0000 C CNN
-F 1 "D_Shockley" H 1190 4985 50  0000 C CNN
-F 2 "footprints:SD103AW-13-F" H 1190 5110 50  0001 C CNN
-F 3 "~" H 1190 5110 50  0001 C CNN
-	1    1190 5110
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR0104
 U 1 1 5E17AAB6
 P 7990 5960
@@ -229,17 +218,6 @@ Text Label 3470 1590 0    50   ~ 0
 V3B
 Wire Wire Line
 	1340 5110 1790 5110
-$Comp
-L Device:D_Shockley D2
-U 1 1 5E3DC0C2
-P 2640 5110
-F 0 "D2" H 2640 4894 50  0000 C CNN
-F 1 "D_Shockley" H 2640 4985 50  0000 C CNN
-F 2 "footprints:SD103AW-13-F" H 2640 5110 50  0001 C CNN
-F 3 "~" H 2640 5110 50  0001 C CNN
-	1    2640 5110
-	-1   0    0    1   
-$EndComp
 Text Label 2370 6360 0    50   ~ 0
 V2A
 Text Label 2720 6810 0    50   ~ 0
@@ -813,6 +791,7 @@ F 0 "TH4" H 4840 5680 50  0000 C CNN
 F 1 "Thermistor" H 4970 5610 50  0001 C BNN
 F 2 "footprints:Thermistor" H 4670 5660 50  0001 C CNN
 F 3 "https://www.digikey.com/en/products/detail/murata-electronics/NCP21XQ102J03RA/588475" H 4670 5660 50  0001 C CNN
+F 4 "https://www.digikey.com/en/products/detail/murata-electronics/NCP21XQ102J03RA/588475" H 4670 5660 50  0001 C CNN "Purchasing Link"
 	1    4670 5660
 	1    0    0    -1  
 $EndComp
@@ -1349,7 +1328,7 @@ F 2 "footprints:D_SOD-123W_OEM" H 13935 1879 50  0001 C CNN
 F 3 "http://www.taiwansemi.com/products/datasheet/SS14LW%20SERIES_A1511.pdf" H 14035 1979 50  0001 C CNN
 F 4 "DK" H 14235 2179 60  0001 C CNN "MFN"
 F 5 "SS110LWRVGCT-ND" H 14135 2079 60  0001 C CNN "MPN"
-F 6 "https://www.digikey.com/product-detail/en/taiwan-semiconductor-corporation/SS110LW-RVG/SS110LWRVGCT-ND/7359346" H 14335 2279 60  0001 C CNN "PurchasingLink"
+F 6 "https://www.digikey.ch/product-detail/en/taiwan-semiconductor-corporation/SS110LW-RVG/SS110LWRVGCT-ND/7359346" H 14335 2279 60  0001 C CNN "PurchasingLink"
 	1    14035 1879
 	1    0    0    -1  
 $EndComp
@@ -1463,7 +1442,7 @@ F 2 "footprints:01530008Z" H 10560 1190 50  0001 C CNN
 F 3 "https://www.littelfuse.com/~/media/commercial-vehicle/datasheets/automotive-fuse-holders/mini/littelfuse_fuse-holders-mini-153-pc-datasheet.pdf" H 10560 1190 50  0001 C CNN
 F 4 "01530008Z" H 10710 1390 50  0001 C CNN "MPN"
 F 5 "F065-ND" H 10710 1390 50  0001 C CNN "DPN"
-F 6 "https://www.digikey.com/product-detail/en/littelfuse-inc/01530008Z/F065-ND/183334" H 10710 1390 50  0001 C CNN "Purchasing Link"
+F 6 "https://www.digikey.in/product-detail/en/littelfuse-inc/01530008Z/F065-ND/183334" H 10710 1390 50  0001 C CNN "Purchasing Link"
 F 7 "This is just a fuse reciprocal, the fuse it will hold is 0297010.WXNV (https://www.digikey.com/product-detail/en/littelfuse-inc/0297010.WXNV/F991-ND/146591)" H 10710 1390 50  0001 C CNN "Notes"
 	1    10610 1390
 	0    1    1    0   
@@ -1800,7 +1779,7 @@ F 2 "footprints:micromatch_female_ra_8" H 7560 2110 60  0001 C CNN
 F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F338070%7FG1%7Fpdf%7FEnglish%7FENG_CD_338070_G1.pdf%7F338070-8" H 7660 2210 60  0001 C CNN
 F 4 "TE" H 7760 3210 60  0001 C CNN "MFN"
 F 5 "338070-8" H 7860 3310 60  0001 C CNN "MPN"
-F 6 "http://www.te.com/usa-en/product-338070-8.html" H 7760 2310 60  0001 C CNN "PurchasingLink"
+F 6 "https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/338070-8/1955711" H 7760 2310 60  0001 C CNN "PurchasingLink"
 	1    7660 1810
 	1    0    0    -1  
 $EndComp
@@ -1853,4 +1832,26 @@ F 3 "" H 8270 2210 50  0001 C CNN
 $EndComp
 Text Notes 7520 1080 0    50   ~ 10
 Power Output to Main Flight Computer
+$Comp
+L Device:D_Shockley D1
+U 1 1 5E17A7E8
+P 1190 5110
+F 0 "D1" H 1190 4894 50  0000 C CNN
+F 1 "D_Shockley" H 1190 4985 50  0000 C CNN
+F 2 "footprints:SD103AW-13-F" H 1190 5110 50  0001 C CNN
+F 3 "~" H 1190 5110 50  0001 C CNN
+	1    1190 5110
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Shockley D2
+U 1 1 5E3DC0C2
+P 2640 5110
+F 0 "D2" H 2640 4894 50  0000 C CNN
+F 1 "SD103AW-13-FA" H 2640 4985 50  0000 C CNN
+F 2 "footprints:SD103AW-13-F" H 2640 5110 50  0001 C CNN
+F 3 "~" H 2640 5110 50  0001 C CNN
+	1    2640 5110
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
