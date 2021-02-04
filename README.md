@@ -3,11 +3,12 @@
 ## Current Design 
 **Two independent groups of 3 cells in series.** <br>
 **Nominal voltage: 12.3V**  <br>
-**Nominal current: 2500 mAh** <br>
+**Nominal current: 4000 mAh** <br>
 
 ### The 25R 18650 Li-ion Battery
 - Discharge rate: 2000 mA
 - Range of voltage: 3.6V (EoD) - 4.1V (EoC)
+- Current rating: 2500mAh
 - Max voltage (switch from CV to CC):  4.1V
 - Icc (charging current) = .25 A 
 - Max cycle life: 100 cycles  
@@ -19,6 +20,13 @@
 
 ## Power Distribution
 ![power distribution](./img/power_distribution.jpg)
+
+## Rev1 Schematic *1/2021
+![rev1_sch](./img/sch.png)
+
+## Rev1 PCB Layout and 3D Model *1/2021
+![rev1_layout](./img/layoutf.png) ![rev1_layoutb](./img/layoutb.png)
+![rev1_3d](./img/3d.png)
 
 ### Subsystem loads 
 | Subsystem | Voltage | Current |
@@ -47,9 +55,57 @@
 
 ## Design Reviews 
 
-[Design Review 1](https://docs.google.com/presentation/d/1L4w887s7x08WpU703jKznQMGognrjYOtB8_F7KaSsSU/edit?usp=sharing): Initial design validation for cell balancing, charging, and discharging
+[Design Review 1](https://docs.google.com/presentation/d/1L4w887s7x08WpU703jKznQMGognrjYOtB8_F7KaSsSU/edit?usp=sharing): Initial design validation for cell balancing, charging, and discharging *12/2019
 
-Design Review 2: 10/2020
+[Design Review 2](https://docs.google.com/presentation/d/1s-o9i7a22b9S89c6PrSgXXXy9AWuLc9d6yVl3I3lAEo/edit#slide=id.gacddbe3730_0_0): Process design review touching on integration of ATMEGA, safety switches, and voltage distribution/regulation *12/2020
+
+## Ordering PCBs From JLCPCB
+
+For ordering the boards, go to JLCPCB.com, and click on "Quote Now" button.
+
+![jlcpcb quote](./img/jlcpcb-quote.PNG)
+
+JLCPCB (ShenzhenJLC Electronics Co., Ltd.), is the largest PCB prototype enterprise in China, and a high-tech manufacturer specializing in quick PCB prototype and small-batch PCB production. You can order a minimum of 5 PCBs for just $2.
+
+First: Upload the gerber files for the board by clicking the "Add gerber file" button. You’ll notice a message at the bottom if the file is successfully uploaded.
+
+![jlcpbc gerber](./img/jlcpcb-gerber.PNG)
+
+A correctly uploaded gerber folder renders the board as follows:
+
+![jlcpcb render](./img/jlcpcb-gerber-render.PNG)
+
+Second: In order to get the board assembled (optional, based on the project requirements), select the "SMT Assembly option. It is important to select the side of the PCB that needs to be assembled, as well as the quantity for SMT. Press the "Confirm" button, then press the "Next" button.
+
+![jlcpcb smt](./img/jlcpcb-smt-option.PNG)
+
+Third: upload the BOM (Bill of Material) and CPL (Component Placement List) files and click the "Next" button. It is necessary to make sure that each of these files follow the jlcpcb specified BOM and CPL formats, respectively:
+* [Sample BOM](https://jlcpcb.com//video/JLCSMT_Sample_BOM1.xlsx?_ga=2.42560357.1905056644.1612161700-100444678.1610257845)
+* [Sample CPL](https://jlcpcb.com//video/JLCSMT_Sample_CPL1.xlsx?_ga=2.42560357.1905056644.1612161700-100444678.1610257845)
+* [SMT FAQ's](https://support.jlcpcb.com/category/78-smt-assembly?_ga=2.42560357.1905056644.1612161700-100444678.1610257845)
+
+Note: If there is an issue with the BOM/CPL formatting, the the page will keep erroring out until it is resolved.
+
+![jlcpcb bom](./img/jlcpcb-bom-cpl.PNG)
+
+Fourth: The parts are automatically detected through the uploaded BOM. They are also matched against jlcpcb's in-stock parts. It is important to go through each row and confirm if the auto-detected parts are the desired parts. Some parts will remain undetected if they cannot be assembled through SMT and require manual assembly post-deilvery.
+
+![jlcpcb parts](./img/jlcpcb-smt-part-selection.PNG)
+
+Fifth: The website renders an assembled board using the CPL file. This feature can be used to review the placement of the components (including orientation). Once carefull reviewed, the next step is to download a list of parts remaining to be assembled towards the bottom of this page view. It is important to place an order for the remaining components to be manually assembled upon delivery. 
+
+![jlcpcb review](./img/jlcpcb-review-part-placement.PNG)
+
+Sixth: Click on the “Save to Cart” button. Then, click on the "Secure Checkout" button. 
+
+![jlcpcb checkout](./img/jlcpcb-checkout.PNG)
+
+Last: Add the payment details and choose the suitable delivery method (this includes FedEx, DHL, and standard mail options). Then, place the order.
+
+Optional: To review the production status of the board, click on the "Order History" button under username. Then, click on In Production > view progress to obtain timestamps for each of the production steps in real time. 
+
+![jlcpcb production](./img/jlcpcb-order-history.PNG)
+
+![jlcpcb production progress](./img/jlcpcb-production-progress.PNG)
 
 ## Questions and Considerations 
-

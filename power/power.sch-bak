@@ -43,7 +43,7 @@ $EndComp
 Wire Wire Line
 	1140 6410 1140 6460
 $Comp
-L power-rescue:CONN_02X03-formula J5
+L formula:CONN_02X03 J5
 U 1 1 5E15A020
 P 5640 1390
 F 0 "J5" H 5640 1705 50  0000 C CNN
@@ -562,7 +562,7 @@ Safety and Monitoring\n
 Text Notes 9640 4770 0    50   ~ 10
 Step Down Circuitry
 $Comp
-L power-rescue:LP5907MFX-3_3_NOPB-dk_PMIC-Voltage-Regulators-Linear U3
+L dk_PMIC-Voltage-Regulators-Linear:LP5907MFX-3_3_NOPB U3
 U 1 1 5FD3AE30
 P 10690 5580
 F 0 "U3" H 10690 6067 60  0000 C CNN
@@ -632,7 +632,7 @@ Wire Wire Line
 	1270 1290 1270 1590
 Connection ~ 1270 1590
 $Comp
-L power-rescue:ATMEGA16M1-formula U1
+L formula:ATMEGA16M1 U1
 U 1 1 5FC49FC2
 P 2370 2990
 F 0 "U1" H 2370 4957 50  0000 C CNN
@@ -1209,7 +1209,7 @@ BAT+
 Text Label 5600 2860 0    50   ~ 0
 BAT-
 $Comp
-L power-rescue:Barrel_jack-formula J2
+L formula:Barrel_jack J2
 U 1 1 5FF50D05
 P 5400 2510
 F 0 "J2" H 5419 2525 50  0000 C CNN
@@ -1223,7 +1223,7 @@ F 6 "https://www.digikey.com/product-detail/en/cui-inc/PJ-037A/CP-037A-ND/164454
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-rescue:D_Zener_13V-formula D3
+L formula:D_Zener_13V D3
 U 1 1 5FF6B278
 P 5990 7410
 F 0 "D3" V 5944 7489 50  0000 L CNN
@@ -1701,7 +1701,7 @@ F 6 "https://www.digikey.com/product-detail/en/panasonic-electronic-components/E
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-rescue:LED_0805_Red-formula D4
+L formula:LED_0805_Red D4
 U 1 1 600CFD2B
 P 13500 5560
 F 0 "D4" V 13538 5443 50  0000 R CNN
@@ -1768,7 +1768,7 @@ F 3 "" H 14300 5710 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power-rescue:LED_0805_Amber-formula D5
+L formula:LED_0805_Amber D5
 U 1 1 600F0E83
 P 14300 5560
 F 0 "D5" V 14338 5442 50  0000 R CNN
