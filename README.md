@@ -39,6 +39,17 @@
 
 (Live Power Budget Sheet)[https://docs.google.com/spreadsheets/d/1nH3F-o1HZTds1WetEKFTd1lCUxuCh-wOJmA-jhke28s/edit?usp=sharing]
 
+## Firmware 
+### MVP
+- Read temperature from thermistors 
+- Read voltage level of each battery 
+- Calculate current flowing out of each battery 
+
+### Goal 
+- Trigger safety break of line when temperature rating or voltage level is above threshold 
+- Balance cells using voltage readings 
+- Display voltage levels 
+- Send data via MQTT (or save data to SD)
 
 ## Requirements 
 [General Rules and Reqs 2019](http://www.soundingrocket.org/uploads/9/0/6/4/9064598/sa_cup_irec_rules___requirements_document_20191118__rev_d_final_.pdf)
