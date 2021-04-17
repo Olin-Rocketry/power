@@ -70,6 +70,13 @@
 
 [Design Review 2](https://docs.google.com/presentation/d/1s-o9i7a22b9S89c6PrSgXXXy9AWuLc9d6yVl3I3lAEo/edit#slide=id.gacddbe3730_0_0): Process design review touching on integration of ATMEGA, safety switches, and voltage distribution/regulation *12/2020
 
+## Rev 2 Plans 
+- USB input 
+- Power supply input 
+- Lin Reg for power input 
+- 10k pull up resistor on RESET of Atmega16 
+- Switch to non-smd or ATMEGA328
+
 ## Ordering PCBs From JLCPCB
 
 For ordering the boards, go to JLCPCB.com, and click on "Quote Now" button.
