@@ -66,17 +66,6 @@ Text Label 5390 1490 2    50   ~ 0
 RESET
 Text Label 5890 1390 0    50   ~ 0
 MOSI
-$Comp
-L power:GND #PWR0101
-U 1 1 5E15CDA1
-P 6040 1490
-F 0 "#PWR0101" H 6040 1240 50  0001 C CNN
-F 1 "GND" H 6045 1317 50  0000 C CNN
-F 2 "" H 6040 1490 50  0001 C CNN
-F 3 "" H 6040 1490 50  0001 C CNN
-	1    6040 1490
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5890 1290 6040 1290
 Wire Wire Line
@@ -462,7 +451,7 @@ Text Label 3470 1290 0    50   ~ 0
 MISO
 Text Label 3470 1990 0    50   ~ 0
 SCK
-Text Label 3470 3990 0    50   ~ 0
+Text Label 4070 3990 0    50   ~ 0
 RESET
 Text Notes 5240 2510 0    50   ~ 10
 Charging INPUT Connectors
@@ -563,17 +552,6 @@ Text Notes 8340 1540 0    50   ~ 10
 To Teensy
 Text Notes 7240 5060 0    50   ~ 0
 12.3V \n4A\n----->
-$Comp
-L power:+3.3V #PWR0108
-U 1 1 5FDD6B21
-P 11330 5380
-F 0 "#PWR0108" H 11330 5230 50  0001 C CNN
-F 1 "+3.3V" H 11345 5553 50  0000 C CNN
-F 2 "" H 11330 5380 50  0001 C CNN
-F 3 "" H 11330 5380 50  0001 C CNN
-	1    11330 5380
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10990 5380 11140 5380
 $Comp
@@ -1105,17 +1083,6 @@ B2B+
 Text Label 6060 3640 2    50   ~ 0
 B3B+
 $Comp
-L power:GND #PWR0129
-U 1 1 604D4D79
-P 7090 7860
-F 0 "#PWR0129" H 7090 7610 50  0001 C CNN
-F 1 "GND" H 7095 7687 50  0000 C CNN
-F 2 "" H 7090 7860 50  0001 C CNN
-F 3 "" H 7090 7860 50  0001 C CNN
-	1    7090 7860
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x02_Female J1
 U 1 1 5FF800A6
 P 5390 3140
@@ -1219,17 +1186,6 @@ NoConn ~ 3470 1490
 NoConn ~ 3470 2190
 NoConn ~ 3470 3590
 NoConn ~ 3470 3690
-$Comp
-L power:+3.3V #PWR0130
-U 1 1 5FF49F28
-P 6040 1290
-F 0 "#PWR0130" H 6040 1140 50  0001 C CNN
-F 1 "+3.3V" H 6055 1463 50  0000 C CNN
-F 2 "" H 6040 1290 50  0001 C CNN
-F 3 "" H 6040 1290 50  0001 C CNN
-	1    6040 1290
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0131
 U 1 1 5DC3C98A
@@ -1854,4 +1810,75 @@ F 3 "~" H 2640 5110 50  0001 C CNN
 	1    2640 5110
 	-1   0    0    1   
 $EndComp
+Text Notes 9640 6550 0    50   ~ 10
+Testing Circuitry\n
+Wire Notes Line
+	11650 6570 11650 7960
+Wire Notes Line
+	11650 6570 9630 6570
+Wire Notes Line
+	9630 6570 9630 7960
+$Comp
+L formula:R_10K R?
+U 1 1 607BBCDE
+P 3860 3840
+F 0 "R?" H 3930 3886 50  0000 L CNN
+F 1 "R_10K" H 3930 3795 50  0000 L CNN
+F 2 "footprints:R_0805_OEM" H 3790 3840 50  0001 C CNN
+F 3 "http://www.bourns.com/data/global/pdfs/CRS.pdf" H 3940 3840 50  0001 C CNN
+F 4 "DK" H 3860 3840 60  0001 C CNN "MFN"
+F 5 "CRS0805-FX-1002ELFCT-ND" H 3860 3840 60  0001 C CNN "MPN"
+F 6 "https://www.digikey.com/products/en?keywords=CRS0805-FX-1002ELFCT-ND" H 4340 4240 60  0001 C CNN "PurchasingLink"
+	1    3860 3840
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3470 3990 3860 3990
+Wire Wire Line
+	3860 3990 4070 3990
+Connection ~ 3860 3990
+$Comp
+L power:+3.3V #PWR?
+U 1 1 607C77CB
+P 3860 3690
+F 0 "#PWR?" H 3860 3540 50  0001 C CNN
+F 1 "+3.3V" H 3875 3863 50  0000 C CNN
+F 2 "" H 3860 3690 50  0001 C CNN
+F 3 "" H 3860 3690 50  0001 C CNN
+	1    3860 3690
+	1    0    0    -1  
+$EndComp
+$Comp
+L formula:CONN_01x02 J?
+U 1 1 607C87C5
+P 10320 6830
+F 0 "J?" H 10399 6822 50  0000 L CNN
+F 1 "CONN_01x02" H 10399 6731 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10220 6830 50  0001 C CNN
+F 3 "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf" H 10320 6930 50  0001 C CNN
+F 4 "DK" H 10420 7030 50  0001 C CNN "MFN"
+F 5 "732-5315-ND" H 10520 7130 50  0001 C CNN "MPN"
+	1    10320 6830
+	1    0    0    -1  
+$EndComp
+Text Label 10120 6830 2    50   ~ 0
+TESTPOWER
+Text Label 10120 6930 2    50   ~ 0
+TESTGND
+Text Label 6040 1290 0    50   ~ 0
+MOSIPOWER
+Text Label 6040 1490 0    50   ~ 0
+MOSIGND
+Text Label 11330 5380 0    50   ~ 0
+BATPOWER
+Text Label 7090 7860 0    50   ~ 0
+BATGND
+Text Label 9800 7300 0    50   ~ 0
+BATPOWER
+Text Label 9800 7430 0    50   ~ 0
+BATGND
+Text Label 10470 7310 0    50   ~ 0
+MOSIPOWER
+Text Label 10470 7510 0    50   ~ 0
+MOSIGND
 $EndSCHEMATC
