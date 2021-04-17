@@ -76,6 +76,7 @@
 - Lin Reg for power input 
 - 10k pull up resistor on RESET of Atmega16 
 - Switch to non-smd or ATMEGA328
+- Voltage difference monitored instead of direct analog to avoid 5.5V maximum
 
 ## Ordering PCBs From JLCPCB
 
